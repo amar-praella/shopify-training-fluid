@@ -160,7 +160,7 @@
                         </div>
 
                       {%- if product.quantity_price_breaks_configured? -%}
-                        <div>
+                        <div class="mt-2">
                           {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                             <span class="caption-large">{{ 'products.product.volume_pricing.title' | t }}</span>
                             <ul class="list-unstyled no-js-hidden">
