@@ -174,7 +174,7 @@
                                 <li class="{%- if forloop.index >= 3 -%}show-more-item hidden{%- endif -%}">
                                   <span>{{ price_break.minimum_quantity }}<span aria-hidden="true">+</span></span>
                                   <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price_break_price }}">{{ 'sections.quick_order_list.each' | t: money: price_break_price }}</span>
-                                </li>
+                                </li> 
                               {%- endfor -%}
                             </ul>
                             {%- if product.selected_or_first_available_variant.quantity_price_breaks.size >= 3 -%}
