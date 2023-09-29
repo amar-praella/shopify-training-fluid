@@ -1,0 +1,16 @@
+{
+  "wrapper": "section.section-content",
+  "sections": {
+    "main": {
+      "type": "template-list-collections",
+      "settings": {
+        "fluid_layout": false,
+        "title": "Collections",
+        "items_per_collection": 4
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

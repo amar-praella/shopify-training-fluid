@@ -1,0 +1,28 @@
+
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.5rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: var(--bs-color-gray-100);
+    border-radius: 3.75rem;
+}
+.progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: var(--bs-color-primary);
+    transition: width .6s ease;
+    border-radius: 3.75rem;
+}

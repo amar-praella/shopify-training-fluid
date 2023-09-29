@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "4dc3267e-3fb0-4f26-a867-4f32b0b36645": {
+      "type": "global-image-with-text",
+      "settings": {
+        "fluid_layout": false,
+        "heading_txt": "Awesome Heading",
+        "txt": "<p>Lipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.<\/p>",
+        "step_heading": "Awesome Sub Heading",
+        "steps_captions": "",
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "section_bg_color": "#FAFAF7",
+        "section_text_color": "#000000",
+        "alignment": "text-left",
+        "image_alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "4dc3267e-3fb0-4f26-a867-4f32b0b36645"
+  ]
+}

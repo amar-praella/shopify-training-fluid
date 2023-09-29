@@ -1,0 +1,61 @@
+
+{% if section.settings.topbar_enabled %}
+    <div class="topbar d-flex align-items-center" data-top-bar style="background-color: {{ section.settings.topbar_bg_color }}; min-height: {{ section.settings.topbar_height }}px;">
+        <div class="container">
+            <div class="d-block text-center ls-1 py-1" style="color: {{ section.settings.topbar_text_color }};font-size: {{ section.settings.topbar_font_size }}">
+                {{ section.settings.topbar_text }}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "t:sections.top-header.name",
+    "settings": [
+        {
+            "type": "header",
+            "content": "t:sections.top-header.settings.header_topbar.label"
+        },
+        {
+            "type": "checkbox",
+            "id": "topbar_enabled",
+            "label": "t:sections.top-header.settings.header_topbar_enabled.label",
+            "default": false
+        },
+        {
+            "type": "html",
+            "id": "topbar_text",
+            "label": "t:sections.top-header.settings.header_topbar_text.label"
+        },
+        {
+            "type": "color",
+            "id": "topbar_bg_color",
+            "label": "t:sections.top-header.settings.header_topbar_bg_color.label",
+            "default": "#D29C7D"
+        },
+        {
+            "type": "color",
+            "id": "topbar_text_color",
+            "label": "t:sections.top-header.settings.header_topbar_text_color.label",
+            "default": "#ffffff"
+        },
+        {
+            "type": "range",
+            "id": "topbar_height",
+            "label": "t:sections.top-header.settings.header_topbar_height.label",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "text",
+            "id": "topbar_font_size",
+            "label": "t:sections.top-header.settings.header_topbar_font_size.label",
+            "default": "15px"
+        }
+    ]
+}
+{% endschema %}

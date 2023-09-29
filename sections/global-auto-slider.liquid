@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="{{ 'global-auto-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{% comment %}
+<noscript>{{ 'global-auto-slider.css' | asset_url | stylesheet_tag }}</noscript>
+{% endcomment %}
+ 
+{% if section.blocks.size > 0 %}
+    <section class="marquee_marquee py-4" style="background: {{ section.settings.section_bg_color }}; color: {{ section.settings.section_txt_color }};" aria-hidden="true">
+        <div class=" marquee-container">
+            <div class="marquee" id="marquee" style="--play:running; --direction:normal; --duration:{{ section.settings.scroll_time }}; --delay:0s; --iteration-count:infinite;">
+                {% for block in section.blocks %}
+                    <div class="marquee_item">
+                        <span class="marquee_text px-5">
+                            {% if block.settings.content != blank %}
+                                {{ block.settings.content }}
+                            {% endif %} 
+                        </span>
+                    </div>
+                {% endfor %}    
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+<script type="text/javascript" defer>
+    let ele = document.querySelector('#marquee');
+    let subject = ele.innerHTML;
+    for(var i=0; i <=4; i++){
+        ele.insertAdjacentHTML('beforeend', subject);
+    }
+
+    let perentEle = document.querySelector('.marquee-container');
+    let perentSubject = perentEle.innerHTML;
+    perentEle.insertAdjacentHTML('beforeend', perentSubject);
+</script>
+
+    {% schema %}
+        {
+            "name": "Auto Scroll",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Layout"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "fluid_layout",
+                    "label": "Full Width Layout?",
+                    "default": false
+                },
+                {
+                    "type": "header",
+                    "content": "Content"
+                },
+                {
+                    "type": "color",
+                    "id": "section_bg_color",
+                    "label": "Background Color",
+                    "default": "#FAFAF7"
+                },
+                {
+                    "type": "color",
+                    "id": "section_txt_color",
+                    "label": "Text Color",
+                    "default": "#222222"
+                },
+                {
+                    "type": "text",
+                    "id":"scroll_time",
+                    "label":"Scroll Time",
+                    "default":"50s"
+                }
+            ],
+            "presets": [
+                {
+                    "name": "Auto Scroll",
+                    "category": "Content"
+                }
+            ],
+            "blocks": [
+                {
+                    "type": "content",
+                    "name": "Content",
+                    "settings": [
+                        {
+                            "type": "text",
+                            "id": "content",
+                            "label": "Text"
+                        }
+                    ]
+                }
+            ]
+        }
+    {% endschema %}
+    
