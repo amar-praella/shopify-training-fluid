@@ -102,7 +102,7 @@
       "on_sale": "Sale",
       "price_range": "From {{ min }} to {{ max }}",
       "volume_pricing": {
-        "each": "{{ money }}\/ea",
+        "each": "{{ money }}",
         "title": "Volume Pricing",
         "note": "Volume pricing available",
         "minimum": "{{ quantity }}+",
