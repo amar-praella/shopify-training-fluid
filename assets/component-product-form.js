@@ -72,6 +72,7 @@ class ProductForm extends HTMLElement {
    */
   manageQtyBtn(event) {
     event.preventDefault();
+
     let currentTarget = event.currentTarget;
     let action = currentTarget.dataset.for || 'increase';
     let $qtyInput = currentTarget.closest('[data-qty-container]').querySelector('[data-qty-input]');
@@ -79,6 +80,8 @@ class ProductForm extends HTMLElement {
     let finalQty = 1;
     let decreaseQtyBtn = currentTarget.closest('[data-qty-container]').querySelector('[data-for="decrease"]');
 
+    // set quantity increment
+    console.log(this.currentVariant,'test');
     if(action == 'decrease' && currentQty <= 1){
       if(decreaseQtyBtn) decreaseQtyBtn.classList.add('disabled');
       return false;
@@ -106,6 +109,7 @@ class VariantSelects extends HTMLElement {
     this.addBtn = this.form.querySelector('[name="add"]');
     this.variant_json = this.form.querySelector('[data-variantJSON]');
     this.variantPicker = this.dataset.type;
+    if(this.formType == 'product-page') window.globalVariables.product.currentVariant = this.currentVariant;
 
     if(this.formType == 'product-page') this.onVariantChange('load');
     this.addEventListener('change', this.onVariantChange.bind(this));
@@ -117,8 +121,7 @@ class VariantSelects extends HTMLElement {
    */
   onVariantChange(_event) {
     this.setCurrentVariant();
-    if(this.formType == 'product-page') window.globalVariables.product.currentVariant = this.currentVariant;
-
+    
     if (!this.currentVariant) {
       this.toggleAddButton('disable');
       // Variant name update
@@ -224,7 +227,6 @@ class VariantSelects extends HTMLElement {
    */
   renderProductInfo(currentVariant, container) {
     if(!currentVariant || !container) return;
-
     // Price Update
     let price = Shopify.formatMoney(currentVariant.price, window.globalVariables.money_format);
     let compare_price = Shopify.formatMoney(currentVariant.compare_at_price, window.globalVariables.money_format);

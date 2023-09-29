@@ -152,8 +152,8 @@
                     {%- when 'price' -%}
                         <div class="price-wrapper mt-2">
                           {%- if current_variant.compare_at_price > current_variant.price -%}<s class="h6 text-gray-600 mr-2 money" data-comparePrice>{{ current_variant.compare_at_price | money }}</s>{%- endif -%}
-                          {%- if current_variant.quantity_price_breaks_configured? -%}
-                            <span class="h5 actual-price money" data-currentPrice>{{ current_variant.price_min | money }} - {{ current_variant.price_max | money }}</span>
+                          {%- if product.quantity_price_breaks_configured? -%}
+                            <span class="h5 actual-price money" data-currentPrice>{{ product.price_min | money }} - {{ product.price_max | money }}</span>
                           {%- else -%}
                             <span class="h5 actual-price money" data-currentPrice>{{ current_variant.price | money }}</span>
                           {%- endif -%}
