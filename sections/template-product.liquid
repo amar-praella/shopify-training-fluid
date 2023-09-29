@@ -158,41 +158,6 @@
                             <span class="h5 actual-price money" data-currentPrice>{{ current_variant.price | money }}</span>
                           {%- endif -%}
                         </div>
-
-                      {%- if product.quantity_price_breaks_configured? -%}
-                        <div class="mt-2">
-                          {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
-                            <span class="caption-large">{{ 'products.product.volume_pricing.title' | t }}</span>
-                            <ul class="list-unstyled no-js-hidden">
-                              <li>
-                                <span>{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
-                                {%- assign price = product.selected_or_first_available_variant.price | money_with_currency -%}
-                                <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: variant_price }}">{{ 'products.product.volume_pricing.each' | t: money: price }}</span>
-                              </li>
-                              {%- for price_break in product.selected_or_first_available_variant.quantity_price_breaks -%}
-                                {%- assign price_break_price = price_break.price | money_with_currency -%}
-                                <li class="{%- if forloop.index >= 3 -%}show-more-item hidden{%- endif -%}">
-                                  <span>{{ price_break.minimum_quantity }}<span aria-hidden="true">+</span></span>
-                                  <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price_break_price }}">{{ 'products.product.volume_pricing.each' | t: money: price_break_price }}</span>
-                                </li> 
-                              {%- endfor -%}
-                            </ul>
-                            {%- if product.selected_or_first_available_variant.quantity_price_breaks.size >= 3 -%}
-                              <show-more-button>
-                                <button
-                                  class="button-show-more link underlined-link"
-                                  id="Show-More-{{ section.id }}"
-                                  type="button"
-                                >
-                                  <span class="label-show-more label-text"
-                                    ><span aria-hidden="true">+ </span>{{ 'products.facets.show_more' | t }}
-                                  </span>
-                                </button>
-                              </show-more-button>
-                          {%- endif -%}
-                        {%- endif -%}
-                        </div>
-                      {%- endif -%}
                       
                         {%- form 'product', product, data-productid: product.id, id: 'product-form-installment', class: 'installment caption-large mt-4' -%}
                             <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
