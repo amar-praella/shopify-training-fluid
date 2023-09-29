@@ -35,7 +35,6 @@
             "type": "megamenu",
             "settings": {
               "title": "Men",
-              "image": "shopify:\/\/shop_images\/1_0ae182fa-8c71-468e-850b-23fc81cb3bf4.jpg",
               "link_text": "Shop Now",
               "link_url": "shopify:\/\/collections\/men"
             }
@@ -44,7 +43,6 @@
             "type": "megamenu",
             "settings": {
               "title": "Women",
-              "image": "shopify:\/\/shop_images\/1_d8a840f3-d40e-4d28-8191-715f1a7874e4.jpg",
               "link_text": "Shop Now",
               "link_url": "shopify:\/\/collections\/women"
             }
@@ -60,6 +58,7 @@
           "header_bg_color": "#ffffff",
           "show_line_separator": false,
           "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0581\/7663\/5061\/files\/logo-fluid.svg?v=1631096036",
+          "logo": "shopify:\/\/shop_images\/man-adjusts-blue-tuxedo-bowtie_925x_12721b18-5227-4d28-aa65-e2d7541308b6.jpg",
           "logo_width": 130,
           "menu": "footer"
         }
@@ -79,9 +78,9 @@
           "col_2_heading": "Customer Care",
           "footer_linklist_col_2": "main-menu",
           "col_3_heading": "Info",
-          "footer_linklist_col_3": "learn",
+          "footer_linklist_col_3": "",
           "col_4_heading": "Discover",
-          "footer_linklist_col_4": "footer-menu",
+          "footer_linklist_col_4": "",
           "col_5_heading": "Subscribe",
           "col_5_txt": "Get monthly updates and free resources.",
           "show_newsletter": true,
@@ -91,7 +90,7 @@
           "social_icon_twitter": true,
           "social_icon_instagram": true,
           "social_icon_youtube": true,
-          "bottom_footer_linklist": "bottom-footer-nav",
+          "bottom_footer_linklist": "",
           "show_payment_icons": true,
           "payment_icon_visa": true,
           "payment_icon_mastercard": true,
@@ -130,7 +129,6 @@
         "type": "mobile-nav-drawer",
         "settings": {
           "logo_svg": "",
-          "logo": "shopify:\/\/shop_images\/logo-fluid_ac600564-01a4-4f9a-8f2a-47a0f47ff075.png",
           "logo_width": 100,
           "main_menu_linklist": "footer",
           "secondary_menu_linklist": "main-menu",
