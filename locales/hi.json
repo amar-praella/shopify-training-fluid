@@ -340,6 +340,115 @@
         "failed_contact_merchant": "डिलीवरी की व्यवस्था करने के लिए %{कंपनी} से संपर्क करें।",
         "failed_contact_merchant_no_company": "डिलीवरी की व्यवस्था करने के लिए हमसे संपर्क करें।"
       }
+    },
+    "notices": {
+      "tags": {
+        "remove_products": "टैग हटाएँ %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "हमारी मेलिंग सूची की सदस्यता लेने के लिए धन्यवाद।",
+        "disclaimer": "आप किसी भी समय सदस्यता समाप्त कर सकते हैं।",
+        "unsubscribe": "सदस्यता रद्द"
+      },
+      "unsubscribed": {
+        "confirmation": "आपने हमारी मेलिंग सूची से सदस्यता समाप्त कर दी है।",
+        "disclaimer": "आपको हमसे कोई और मार्केटिंग अपडेट प्राप्त नहीं होगा. आप किसी भी समय दोबारा सदस्यता ले सकते हैं.",
+        "preview": "आप पूर्वावलोकन कर रहे हैं कि ग्राहक सदस्यता समाप्त करने पर क्या देखेंगे।"
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>आपने ईमेल ओपन ट्रैकिंग का विकल्प चुना है।<\/b>",
+          "visibility": "ईमेल खुली दरों की सूचना गुमनाम रूप से दी जाएगी। हम केवल तभी देखेंगे जब आपने समग्र ईमेल ओपन रेट के हिस्से के रूप में कोई ईमेल खोला हो।",
+          "opt_out_html": "यदि आप यह जानकारी साझा नहीं करना चाहते हैं तो आप ईमेल ओपन ट्रैकिंग से <a style=\"text-decoration:underline;\" href=\"%{link}\">बाहर निकल<\/a> सकते हैं।",
+          "preview_bar": "आप पूर्वावलोकन कर रहे हैं कि जब ग्राहक ईमेल ओपन ट्रैकिंग का विकल्प चुनेंगे तो उन्हें क्या दिखाई देगा।"
+        },
+        "opt_out": {
+          "opted_out_html": "<b>आपने ईमेल ओपन ट्रैकिंग से ऑप्ट आउट कर लिया है.<\/b>",
+          "visibility": "यदि आपने हमारे ईमेल खोले हैं तो हम नहीं देख पाएंगे।",
+          "opt_in_html": "ईमेल ओपन ट्रैकिंग का <a style=\"text-decoration:underline;\" href=\"%{link}\">विकल्प चुनें<\/a> ।",
+          "preview_bar": "आप पूर्वावलोकन कर रहे हैं कि जब ग्राहक ईमेल ओपन ट्रैकिंग से बाहर निकलेंगे तो उन्हें क्या दिखाई देगा।"
+        },
+        "no_longer_track": {
+          "status_html": "<b>हम अब किसी भी खुले ईमेल को ट्रैक नहीं करते हैं।<\/b>",
+          "privacy_policy": "इस ईमेल को भेजे जाने के बाद, हमने अपनी गोपनीयता नीति को अपडेट किया और अब हम ट्रैक ओपन नहीं करते।"
+        },
+        "track": {
+          "status_html": "<b>ईमेल ओपन ट्रैकिंग की सूचना दी गई है।<\/b>",
+          "visibility": "कुल ईमेल खोलने की दर के भाग के रूप में हम केवल यह देखेंगे कि आपने ईमेल खोला है या नहीं।"
+        },
+        "updated_policy": {
+          "status_html": "<b>ईमेल ओपन ट्रैकिंग की सूचना दी गई है।<\/b>",
+          "visibility": "हमने अपनी नीति अपडेट कर दी है और अब ट्रैक ईमेल खुल गया है। ईमेल खुली दरों की सूचना गुमनाम रूप से दी जाएगी। हम केवल यह देखेंगे कि आपने ईमेल खोलने की कुल दर के हिस्से के रूप में कोई ईमेल खोला है या नहीं।",
+          "opt_out_html": "यदि आप यह जानकारी साझा नहीं करना चाहते हैं, तो आप <a style=\"text-decoration:underline;\" href=\"%{link}\">सदस्यता समाप्त कर सकते हैं।<\/a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "स्टॉक में",
+          "out_of_stock": "स्टॉक ख़त्म"
+        }
+      },
+      "boolean": {
+        "true_label": "हाँ",
+        "false_label": "नहीं"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "प्रासंगिकता",
+        "price_ascending": "कीमतों का उतार - चढ़ाव",
+        "price_descending": "कीमत, उच्च से निम्न"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "त्रुटि - %{शीर्षक}",
+      "products": "उत्पादों",
+      "shopping_cart": "आपकी खरीदारी की गाड़ी",
+      "account": "खाता",
+      "create_account": "खाता बनाएं",
+      "reset_account": "खाता रीसेट करें",
+      "addresses": "पतों",
+      "order": "आदेश %{नाम}",
+      "search": "खोज",
+      "search_results": {
+        "one": "खोजें: \"%{terms}\" के लिए %{गिनती} परिणाम मिला",
+        "other": "खोजें: \"%{terms}\" के लिए %{गिनती} परिणाम मिले"
+      },
+      "collections": "संग्रह",
+      "not_found": "404 नहीं मिला",
+      "challenge": "चुनौती",
+      "checkpoint": "जांच की चौकी"
+    },
+    "cart": {
+      "discounts_with_count": "%{गिनती} छूट लागू कर दी गई है"
+    },
+    "challenge": {
+      "message": "जारी रखने के लिए, हमें बताएं कि आप रोबोट नहीं हैं।",
+      "error": "आपका उत्तर सही नहीं था, कृपया पुनः प्रयास करें।",
+      "submit_button_text": "जमा करना"
+    },
+    "checkpoint": {
+      "message": "जारी रखने के लिए कैप्चा हल करें",
+      "error": "कैप्चा सत्यापन विफल रहा",
+      "submit_button_text": "जमा करना"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "आमतौर पर 1 घंटे में तैयार हो जाता है",
+        "two_hours": "आमतौर पर 2 घंटे में तैयार हो जाता है",
+        "four_hours": "आमतौर पर 4 घंटे में तैयार हो जाता है",
+        "twenty_four_hours": "आमतौर पर 24 घंटे में तैयार हो जाता है",
+        "two_to_four_days": "आमतौर पर 2-4 दिनों में तैयार हो जाता है",
+        "five_or_more_days": "आमतौर पर 5+ दिनों में तैयार हो जाता है",
+        "zero_to_two_hours": "आमतौर पर 2 घंटे में तैयार हो जाता है",
+        "two_to_four_hours": "आमतौर पर 4 घंटे में तैयार हो जाता है",
+        "immediately": "अब पिकअप के लिए तैयार हैं",
+        "next_day": "अगले दिन पिकअप के लिए तैयार"
+      }
     }
   },
   "customer_accounts": {
@@ -516,6 +625,199 @@
       "add_payment_method_banner": "तेज़ चेकआउट या पूर्व-अधिकृत सेवाओं के लिए भुगतान विधि जोड़ें",
       "no_payment_methods_banner": "कोई भुगतान विधि नहीं जोड़ी गई",
       "edit_payment_method_button_accessibility_label": "{{paymentMethodName}} को संपादित करें जिसका अंत {{lastDigits}} पर हो"
+    },
+    "enable_javascript": "अपना खाता देखने के लिए, अपनी ब्राउज़र सेटिंग में जावास्क्रिप्ट सक्षम करें या किसी अन्य ब्राउज़र से लॉग इन करें।",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "खाता मेनू छिपाएँ",
+        "label": "खाता",
+        "show_accessibility_label": "खाता मेनू दिखाएँ",
+        "nav_accessibility_label": "खाता नेविगेशन",
+        "open_menu_accessibility_label": "खाता नेविगेशन खोलें",
+        "close_menu_accessibility_label": "खाता नेविगेशन बंद करें",
+        "loading_message": "खाता नेविगेशन लोड हो रहा है"
+      },
+      "action_menu_accessibility_label": "अधिक कार्रवाई",
+      "close_menu_accessibility_label": "मुख्य नेविगेशन बंद करें",
+      "contact_email_subject": "{{shopName}} ऑनलाइन स्टोर से संपर्क करें",
+      "contact_link": "संपर्क करें",
+      "delete_confirmation": {
+        "cancel": "रद्द करना",
+        "delete": "मिटाना"
+      },
+      "dismiss_toast": "नकार देना",
+      "document_title": "{{sectionName}} - {{shopName}} - खाता",
+      "go_to_store_link": "दुकान पर जाओ",
+      "loading_message": "लोड हो रहा है",
+      "log_out_link": "लॉग आउट",
+      "logout_overlay_label": "आपको लॉग आउट किया जा रहा है...",
+      "nav_label_accessibility_label": "मुख्य नेविगेशन",
+      "navigation_accessibility_message": "आप {{sectionName}} पर नेविगेट कर चुके हैं",
+      "open_menu_accessibility_label": "मुख्य नेविगेशन खोलें",
+      "orders_link_label": "आदेश",
+      "shop_logo_accessibility_label": "{{shopName}} लोगो",
+      "subscriptions_link_label": "सदस्यता"
+    },
+    "account_information": {
+      "loading_accessibility_message": "खाता जानकारी लोड हो रही है",
+      "loading_finished_accessibility_message": "खाता जानकारी लोड हो गई है",
+      "profile_card": {
+        "cancel": "रद्द करना",
+        "cancel_accessibility_label": "प्रोफ़ाइल संपादन रद्द करें",
+        "edit": "संपादन करना",
+        "edit_accessibility_label": "प्रोफ़ाइल संपादित करें",
+        "email_help_text": "लॉगिन के लिए उपयोग किया गया ईमेल बदला नहीं जा सकता",
+        "first_name": "पहला नाम",
+        "last_name": "उपनाम",
+        "no_name_provided_accessibility_label": "कोई नाम नहीं जोड़ा गया",
+        "phone_number_help_text": "लॉगिन के लिए उपयोग किया गया फ़ोन नंबर बदला नहीं जा सकता",
+        "save": "बचाना",
+        "save_accessibility_label": "प्रोफ़ाइल बचा",
+        "title": "प्रोफ़ाइल"
+      },
+      "profile_update_confirmation_message": "प्रोफाइल अद्यतन किया गया",
+      "title": "खाता संबंधी जानकारी",
+      "people": {
+        "pagination": {
+          "load_more": "और लोड करें",
+          "load_more_accessibility_label": "अधिक लोगों को लोड करें",
+          "loading_accessibility_label": "लोगों को लोड किया जा रहा है"
+        }
+      },
+      "add_button": "जोड़ना"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "लेआउट विकल्प",
+      "list_title": "आदेश",
+      "order_list": {
+        "column_headers": {
+          "order": "आदेश",
+          "items": "सामान",
+          "total": "कुल"
+        },
+        "delivered": "वितरित {{date}}",
+        "empty_state_order_source_description": "केवल {{email}} द्वारा दिए गए ऑर्डर ही यहां दिखाई देंगे।",
+        "empty_state_subtitle": "ऑर्डर देने के लिए स्टोर पर जाएं.",
+        "empty_state_title": "अभी तक कोई आदेश नहीं",
+        "empty_state_title_for_pending_orders": "कोई लंबित आदेश नहीं",
+        "estimated_shortform": "ईएसटी। {{date}}",
+        "estimated_delivery": "अनुमानित डिलीवरी {{date}}",
+        "one_images_accessibility_label": "ऑर्डर में {{lineItemName1}} शामिल है",
+        "two_images_accessibility_label": "ऑर्डर में {{lineItemName1}} , {{lineItemName2}} शामिल है",
+        "three_images_accessibility_label": "ऑर्डर में {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} शामिल हैं",
+        "four_images_accessibility_label": "ऑर्डर में शामिल है {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "ऑर्डर में {{lineItemName1}} , {{lineItemName2}} , और {{numberOfAdditionalProducts}} और उत्पाद शामिल हैं",
+        "more_than_four_products_accessibility_label": "ऑर्डर में {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , और {{numberOfAdditionalProducts}} और उत्पाद शामिल हैं",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} उत्पाद",
+        "carousel": {
+          "one_products_accessibility_label": "ऑर्डर में {{lineItemName1}} मात्रा {{lineItemQuantity1}} शामिल है",
+          "two_products_accessibility_label": "ऑर्डर में {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} शामिल है",
+          "three_products_accessibility_label": "ऑर्डर में शामिल है {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "ऑर्डर में शामिल है {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} मात्रा {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "ऑर्डर में शामिल है {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} मात्रा {{lineItemQuantity4}} , {{lineItemName5}} मात्रा {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "ऑर्डर में शामिल है {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} मात्रा {{lineItemQuantity4}} , {{lineItemName5}} मात्रा {{lineItemQuantity5}} , {{lineItemName6}} मात्रा {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "ऑर्डर में शामिल है {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} मात्रा {{lineItemQuantity4}} , {{lineItemName5}} मात्रा {{lineItemQuantity5}} , {{lineItemName6}} मात्रा {{lineItemQuantity6}} और अधिक",
+          "view_order_details": "आदेश विवरण देखो",
+          "previous": "पहले का",
+          "next": "अगला"
+        },
+        "items": {
+          "one": "{{count}} आइटम",
+          "other": "{{count}} आइटम"
+        },
+        "list_view": "सूची दृश्य दिखाएँ",
+        "no_filtered_results_description": "अपने ऑर्डर देखने के लिए फ़िल्टर हटाएं या समायोजित करें",
+        "no_filtered_results_title": "कोई फ़िल्टर किए गए परिणाम नहीं",
+        "order_link": "ऑर्डर देखें {{name}}",
+        "order_number": "आदेश {{name}}",
+        "orders_title": "की पुष्टि",
+        "pagination": {
+          "nav_accessibility_label": "नेविगेशन बटन का आदेश देता है",
+          "next": "अगला",
+          "next_accessibility_label": "अगले आदेश",
+          "previous": "पिछला",
+          "previous_accessibility_label": "पिछले आदेश",
+          "load_more": "और लोड करें",
+          "load_more_accessibility_label": "अधिक ऑर्डर लोड करें"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "विवरण के लिए ऑर्डर देखें",
+            "estimated_delivery": "अनुमानित डिलीवरी {{date}}",
+            "last_updated": "अंतिम बार अद्यतन किया गया {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "ईएसटी। डिलीवरी {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "भुगतान बांकी है",
+            "due": "भुगतान देय {{date}}",
+            "due_today": "भुगतान आज देय है",
+            "due_without_date": "भुगतान राशि",
+            "due_on_fulfillment": "पूर्ति पर भुगतान देय",
+            "pay_to_confirm": "पुष्टि करने के लिए भुगतान करें",
+            "payment_not_due": "भुगतान अभी तक देय नहीं है"
+          },
+          "table_view": {
+            "overdue": "अतिदेय",
+            "due": "देय {{date}}",
+            "due_today": "आज देय",
+            "paid": "चुकाया गया",
+            "due_without_date": "देय",
+            "due_on_fulfillment": "पूर्ति पर देय",
+            "pay_to_confirm": "पुष्टि करने के लिए भुगतान करें",
+            "payment_not_due": "अभी तक नहीं"
+          }
+        },
+        "sort_by": "क्रमबद्ध करें: {{option}}",
+        "sort_hide_options_accessibility_label": "पुष्ट आदेशों के लिए क्रमबद्ध विकल्प छिपाएँ।",
+        "sort_show_options_accessibility_label": "पुष्ट आदेशों के लिए क्रमबद्ध विकल्प दिखाएँ।",
+        "sort_currently_sorted_by_accessibility_label": "वर्तमान में क्रमबद्ध: {{option}}",
+        "sort_title": "क्रम से लगाना",
+        "sort": {
+          "date": {
+            "newest": "नवीनतम से सबसे पुराना",
+            "oldest": "सबसे पुराने से नवीनतम"
+          },
+          "location": {
+            "ascending": "स्थान (AZ)",
+            "descending": "स्थान (ZA)"
+          },
+          "order_number": {
+            "ascending": "ऑर्डर संख्या (निम्न से उच्च)",
+            "descending": "ऑर्डर संख्या (उच्च से निम्न)"
+          },
+          "order_total": {
+            "ascending": "कुल ऑर्डर (कम से ज़्यादा)",
+            "descending": "कुल ऑर्डर (उच्च से निम्न)"
+          }
+        },
+        "filter_title": "फ़िल्टर",
+        "filter": {
+          "clear_section": "साफ़ अनुभाग",
+          "clear_all": "सभी साफ करें",
+          "apply": "आवेदन करना",
+          "date": {
+            "start_date": "आरंभ करने की तिथि",
+            "end_date": "अंतिम तिथि",
+            "title": "आर्डर की तारीख",
+            "today": "आज",
+            "last_7_days": "पिछले 7 दिन",
+            "last_30_days": "पिछले 30 दिनों में",
+            "last_90_days": "पिछले 90 दिन",
+            "last_365_days": "पिछले 12 महीने",
+            "custom": "रिवाज़"
+          }
+        },
+        "table_view": "तालिका दृश्य दिखाएँ",
+        "show_order_actions_accessibility_label": "ऑर्डर {{name}} के लिए ऑर्डर क्रियाएँ दिखाएँ"
+      },
+      "order_status": {
+        "attempted_delivery_label": "वितरण प्रयास किया गया"
+      }
     }
   }
 }
