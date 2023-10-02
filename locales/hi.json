@@ -1091,6 +1091,160 @@
         "additional_information": {
           "title": "अतिरिक्त जानकारी"
         }
+      },
+      "thank_you": {
+        "non_shippable_title": "आपका ऑर्डर पूरा हो गया है",
+        "let_us_know": "हमें बताइए",
+        "login_title": "सभी ऑर्डर विवरण देखने के लिए लॉग इन करें",
+        "login_description": "आप अपना ऑर्डर नंबर ईमेल द्वारा प्राप्त रसीद में पा सकते हैं।",
+        "login_description_phone": "आप अपना ऑर्डर नंबर टेक्स्ट संदेश के माध्यम से प्राप्त रसीद में पा सकते हैं।",
+        "login_not_customer_html": "%{नाम} नहीं? आप %{link} कर सकते हैं",
+        "login_reorder_link_text": {
+          "one": "यह उत्पाद भी खरीदें",
+          "other": "ये उत्पाद भी खरीदें"
+        },
+        "customer_information_hidden_fields_message": "सभी ग्राहक जानकारी देखने के लिए लॉग इन करें।",
+        "cancelled_title": "आपका ऑर्डर रद्द कर दिया गया है",
+        "cancelled_description": "आपका ऑर्डर %{date} को रद्द कर दिया गया था. अगर तुम्हारे पास कोई सवाल है तो हमसे संपर्क करें।",
+        "order_number_label": "क्रम संख्या",
+        "customer_validation_error": "एक वैध ईमेल या ऑर्डर नंबर दर्ज करें.",
+        "customer_validation_error_phone": "एक वैध फ़ोन या ऑर्डर नंबर दर्ज करें.",
+        "login": "लॉग इन करें",
+        "unfulfilled_items_title": "शिपिंग की तैयारी",
+        "unfulfilled_items_description": "हम फिलहाल इन वस्तुओं को शिपिंग के लिए तैयार कर रहे हैं।",
+        "marker": {
+          "current": "वर्तमान शिपमेंट स्थान",
+          "shipping": "शिपिंग पता"
+        },
+        "pick_up_in_store_marker": {
+          "current": "वर्तमान शिपमेंट स्थान",
+          "shipping": "लेने की जगह"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "इस शिपमेंट में आइटम",
+          "unfulfilled_table_title": "आइटम शिपिंग के लिए तैयार हो रहे हैं",
+          "product_image_label": "उत्पाद का चित्र",
+          "description_label": "विवरण",
+          "quantity_label": "मात्रा"
+        },
+        "order_updates_description_missing": "आपको शिपिंग अपडेट प्राप्त नहीं हो रहे हैं.",
+        "order_updates_subscribe_to_email_notifications": "ईमेल द्वारा शिपिंग अपडेट प्राप्त करें",
+        "order_updates_subscribe_to_email_or_phone_notifications": "ईमेल या टेक्स्ट द्वारा शिपिंग अपडेट प्राप्त करें",
+        "order_updates_subscribe_to_phone_notifications": "टेक्स्ट द्वारा शिपिंग अपडेट प्राप्त करें",
+        "order_updates_submit_subscription": "जमा करना",
+        "track_shipment": "शिपमेंट ट्रैक करना",
+        "other_options": "अन्य विकल्प",
+        "delivery_information_label": "वितरण की जानकारी:",
+        "gift_card_sent_confirmation": "उपहार कार्ड भेजे गए",
+        "qr_code": {
+          "send_link_to_phone": "या अपने फ़ोन पर एक लिंक भेजें",
+          "title": "अपने फ़ोन पर नज़र रखें"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "अपने फ़ोन से स्कैन करें"
+          },
+          "sms": {
+            "title": "या अपने फ़ोन पर एक लिंक भेजें"
+          }
+        },
+        "view_business_customer_account": "अपना खाता देखें",
+        "breadcrumbs_submitted": "प्रस्तुत",
+        "breadcrumbs_in_review": "समीक्षा में",
+        "breadcrumbs_confirmed": "की पुष्टि",
+        "missing_shipping_address_banner": {
+          "title": "ऑर्डर में शिपिंग पता नहीं है",
+          "text_html": "अपना पता जोड़ने के लिए %{contact_us}",
+          "contact_us": "संपर्क करें"
+        },
+        "first_payment_complete": "पहला भुगतान पूरा हुआ",
+        "in_store_purchase": "दुकान में खरीदारी",
+        "branded_promise": {
+          "shop_promise": {
+            "confirmed": {
+              "guaranteed_on_time": "%{दिनांक} तक डिलीवरी की गारंटी",
+              "on_time": "%{दिनांक} तक डिलीवरी"
+            },
+            "in_transit": {
+              "guaranteed_on_time": "%{दिनांक} तक डिलीवरी की गारंटी",
+              "on_time": "%{दिनांक} तक डिलीवरी",
+              "guaranteed_delayed": "आपका शिपमेंट %{date} तक अपेक्षा के अनुरूप नहीं पहुंचा। एक बार यह आ जाए तो आप दावा प्रस्तुत कर सकते हैं",
+              "delayed": "%{date} तक अपेक्षित आपके शिपमेंट में देरी हो रही है।"
+            },
+            "out_for_delivery": {
+              "guaranteed_on_time": "%{दिनांक} तक डिलीवरी की गारंटी",
+              "on_time": "%{दिनांक} तक डिलीवरी",
+              "guaranteed_delayed": "आपका शिपमेंट %{date} तक अपेक्षा के अनुरूप नहीं पहुंचा। एक बार यह आ जाए तो आप दावा प्रस्तुत कर सकते हैं",
+              "delayed": "%{date} तक अपेक्षित आपके शिपमेंट में देरी हो रही है।"
+            },
+            "delivered": {
+              "guaranteed_on_time": "के साथ समय पर वितरित किया गया",
+              "on_time": "%{दिनांक} तक वितरित",
+              "guaranteed_delayed": "चूँकि आपका शिपमेंट %{date} की अपेक्षित तारीख के बाद आया है, आप %{shop_cash} के लिए पात्र हो सकते हैं",
+              "delayed": "वितरित %{दिनांक}, मूल रूप से %{original_delivery_date} तक अपेक्षित था"
+            }
+          },
+          "buy_with_prime": {
+            "order_tracking_link_text": "प्राइम ऑर्डर के साथ खरीदें को ट्रैक और प्रबंधित करें",
+            "shipping_method": {
+              "with_promise": "प्राइम, आगमन %{तिथि} · मुफ़्त डिलीवरी और वापसी",
+              "without_promise": "प्राइम · मुफ़्त डिलीवरी और रिटर्न"
+            }
+          }
+        },
+        "location_title": "जगह",
+        "thank_you_ready_for_picked_up": "आपका ऑर्डर %{पता} पर उठाया गया था।",
+        "ready_for_delivery": "पहुँचाने के लिए तैयार",
+        "order_updates_subscribe_to_email_notifications_failed": "हम इस ईमेल को अपडेट के लिए संग्रहीत नहीं कर सकते. कृपया पुनः प्रयास करें या किसी अन्य ईमेल का उपयोग करें।",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "आपके द्वारा दर्ज किया गया ईमेल पहले से मौजूद है।",
+        "subscriptions_management": {
+          "title": "अंशदान",
+          "description": "अपनी सदस्यताएँ देखने और प्रबंधित करने के लिए अपने खाते को जारी रखें।",
+          "button_label": "अपनी सदस्यता प्रबंधित करें"
+        },
+        "manage_order_label": "अपना ऑर्डर प्रबंधित करें",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "आपको कुछ ही मिनटों में अपने उपहार कार्ड के साथ एक संदेश प्राप्त होगा।",
+          "other": "आपको कुछ ही मिनटों में अपने उपहार कार्ड के साथ एक संदेश प्राप्त होगा।"
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "आपको कुछ ही मिनटों में अपने उपहार कार्ड के साथ एक ईमेल प्राप्त होगा।",
+          "other": "आपको कुछ ही मिनटों में अपने उपहार कार्ड के साथ एक ईमेल प्राप्त होगा।"
+        },
+        "gift_card_email_title": {
+          "one": "उपहार कार्ड ईमेल द्वारा भेजा गया था",
+          "other": "उपहार कार्ड ईमेल द्वारा भेजे गए थे"
+        },
+        "gift_card_text_title": {
+          "one": "उपहार कार्ड पाठ संदेश द्वारा भेजा गया था",
+          "other": "उपहार कार्ड टेक्स्ट संदेश द्वारा भेजे गए थे"
+        },
+        "resend_gift_cards_by_email": "ईमेल दुबारा भेजें",
+        "resend_gift_cards_by_text": "पाठ संदेश पुनः भेजें",
+        "gift_card_resent_confirmation": {
+          "one": "उपहार कार्ड पुनः भेजा गया था.",
+          "other": "उपहार कार्ड पुनः भेजे गए।"
+        },
+        "gift_card_resend_failure": {
+          "one": "आपका उपहार कार्ड पुनः भेजने में एक समस्या थी। पुनः प्रयास करें या हमसे संपर्क करें।",
+          "other": "आपके उपहार कार्ड पुनः भेजने में एक समस्या थी। पुनः प्रयास करें या हमसे संपर्क करें।"
+        }
+      },
+      "review": {
+        "title": "समीक्षा",
+        "review_title": "समीक्षा करें और भुगतान करें",
+        "checkout_as_guest": "अतिथि के रूप में चेकआउट करें",
+        "blocks": {
+          "contact_method_title": "संपर्क",
+          "billing_address_title": "बिलिंग",
+          "shipping_address_title": "यहां भेजें",
+          "shipping_method_title": "शिपिंग का तरीका",
+          "payment_method_title": "भुगतान विधि",
+          "change_link_label": "परिवर्तन",
+          "change_contact_method_link_label": "संपर्क जानकारी बदलें",
+          "change_billing_address_link_label": "बिलिंग पता बदलें",
+          "change_shipping_address_link_label": "शिपिंग पता बदले"
+        }
       }
     },
     "pagination": {
@@ -1321,7 +1475,8 @@
   "customer_accounts": {
     "order_details": {
       "image_gallery": {
-        "previous": "पिछले आइटम दिखाएँ"
+        "previous": "पिछले आइटम दिखाएँ",
+        "next": "अगले आइटम दिखाएँ"
       },
       "mobile_summary_toggle_button": {
         "open": "ऑर्डर सारांश दिखाएँ",
@@ -1432,7 +1587,28 @@
       "login_to_view_all_order_details": "सभी ऑर्डर विवरण देखने के लिए लॉग इन करें।",
       "log_in": "लॉग इन करें",
       "logged_in_account_no_permission_to_order": "आप {{email}} के रूप में लॉग इन हैं। इस खाते को इस आदेश को प्रबंधित करने की अनुमति नहीं है.",
-      "log_in_to_a_different_account": "किसी भिन्न खाते में लॉग इन करें"
+      "log_in_to_a_different_account": "किसी भिन्न खाते में लॉग इन करें",
+      "shipment_timeline": {
+        "expand_events_label": "प्रदर्शन का विवरण",
+        "expand_events_accessibility_label": "ऑर्डर शिपमेंट विवरण दिखाएं",
+        "hide_events_label": "विवरण छुपाओ",
+        "hide_events_accessibility_label": "ऑर्डर शिपमेंट विवरण छुपाएं"
+      },
+      "addresses_section_title": "बिलिंग और शिपिंग",
+      "order_details": "ऑर्डर का विवरण",
+      "order_details_skeleton_accessibility_label": "सभी ऑर्डर विवरण देखने के लिए लॉग इन करें।",
+      "billing_address": "बिल भेजने का पता",
+      "card_ending_with": "{{lastDigits}} पर समाप्त हो रहा है",
+      "contact": "संपर्क",
+      "contact_information": "संपर्क जानकारी",
+      "company": "कंपनी",
+      "fully_refunded_label": "वापस कर दी",
+      "group_title_label": "इसका भाग: {{groupTitle}}",
+      "discount": "छूट",
+      "hide_items": "आइटम छिपाएँ",
+      "loading": "ऑर्डर विवरण लोड हो रहा है",
+      "loading_finished_accessibility_message": "ऑर्डर विवरण लोड कर दिया गया है",
+      "location": "जगह"
     },
     "addresses": {
       "add_button": "पता जोड़ें",
@@ -1526,6 +1702,118 @@
         "one": "महीना",
         "other": "महीने"
       }
+    },
+    "orders": {
+      "order_status": {
+        "attempted_delivery_description": "डिलीवरी का प्रयास असफल रहा.",
+        "confirmed_description": "हमें आपका आदेश प्राप्त हो गया है.",
+        "on_its_way_description": "यह शिपमेंट रास्ते में है.",
+        "out_for_delivery_description": "यह शिपमेंट डिलीवरी के लिए बाहर है।",
+        "preparing_for_shipping_label": "शिपिंग की तैयारी",
+        "preparing_for_shipping_description": "इन वस्तुओं को शिपिंग के लिए तैयार किया जा रहा है।",
+        "ready_for_pickup_label": "पिक अप के लिए तैयार",
+        "ready_for_pickup_description": "ये आइटम पिकअप के लिए तैयार हैं. जब आप अपना ऑर्डर उठाएं तो कृपया अपने ऑर्डर की पुष्टिकरण साथ लाएं।",
+        "ready_for_pickup_location": "आपका ऑर्डर स्थान पर पिकअप के लिए तैयार है",
+        "picked_up_label": "उठाया",
+        "picked_up_description": "ये सामान उठा लिया गया है.",
+        "canceled_description": "आपका ऑर्डर {{date}} को रद्द कर दिया गया था।",
+        "canceled_label": "रद्द",
+        "canceled_title": "आपका ऑर्डर रद्द कर दिया गया है",
+        "come_back": "अपनी शिपमेंट स्थिति पर अपडेट के लिए इस पेज पर वापस आएं।",
+        "company_tracking_number": "{{company}} ट्रैकिंग नंबर:",
+        "confirmed_label": "की पुष्टि",
+        "confirmed_title": "आपका ऑर्डर कन्फ़र्म हो गया है",
+        "confirmed_description_pickup": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक ईमेल प्राप्त होगा।",
+        "confirmed_description_digital": "आपका ऑर्डर तैयार होने पर आपको एक ईमेल प्राप्त होगा।",
+        "confirmed_description_gift_card_text": "आपका ऑर्डर तैयार होने पर आपको एक टेक्स्ट प्राप्त होगा।",
+        "delivered_description": "यह शिपमेंट वितरित कर दिया गया है.",
+        "delivered_label": "पहुंचा दिया",
+        "delivered_title": "आपका शिपमेंट वितरित कर दिया गया है",
+        "delivered_description_digital": "आपका ऑर्डर पूरा हो गया है.",
+        "delivered_description_gift_card": {
+          "one": "उपहार कार्ड ईमेल द्वारा भेजा गया था.",
+          "other": "उपहार कार्ड ईमेल द्वारा भेजे गए थे।"
+        },
+        "delivered_description_gift_card_text": {
+          "one": "उपहार कार्ड पाठ द्वारा भेजा गया था.",
+          "other": "उपहार कार्ड पाठ द्वारा भेजे गए थे।"
+        },
+        "gift_card_label": {
+          "one": "उपहार कार्ड",
+          "other": "उपहार कार्ड"
+        },
+        "gift_card_resend": {
+          "one": "ईमेल दुबारा भेजें",
+          "other": "ईमेल पुनः भेजें"
+        },
+        "gift_card_resend_text": {
+          "one": "पाठ पुनः भेजें",
+          "other": "पाठ पुनः भेजें"
+        },
+        "gift_resend_success": {
+          "one": "उपहार कार्ड पुनः भेजा गया",
+          "other": "उपहार कार्ड नाराज हैं"
+        },
+        "gift_resend_failure": {
+          "one": "आपका उपहार कार्ड पुनः भेजने में एक समस्या थी। पुनः प्रयास करें या हमसे संपर्क करें।",
+          "other": "आपके उपहार कार्ड पुनः भेजने में एक समस्या थी। पुनः प्रयास करें या हमसे संपर्क करें।"
+        },
+        "gift_card_resend_description": {
+          "one": "यदि यह प्राप्त नहीं हुआ, तो ईमेल पुनः भेजें या",
+          "other": "यदि वे प्राप्त नहीं हुए, तो ईमेल पुनः भेजें या"
+        },
+        "gift_card_resend_description_text": {
+          "one": "यदि यह प्राप्त नहीं हुआ, तो पाठ पुनः भेजें या",
+          "other": "यदि वे प्राप्त नहीं हुए, तो पाठ पुनः भेजें या"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "उपहार कार्ड एक अलग ईमेल में भेजा जाएगा.",
+          "other": "प्रत्येक उपहार कार्ड एक अलग ईमेल में भेजा जाएगा।"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "उपहार कार्ड एक अलग पाठ में भेजा जाएगा.",
+          "other": "प्रत्येक उपहार कार्ड एक अलग पाठ में भेजा जाएगा।"
+        },
+        "estimated_delivery": "अनुमानित डिलीवरी {{date}}",
+        "in_review_description": "यदि हमें अधिक जानकारी की आवश्यकता होगी या आपके ऑर्डर की पुष्टि हो जाएगी तो हम आपको बताएंगे।",
+        "in_review_label": "समीक्षा में",
+        "in_review_title": "आपके आदेश की समीक्षा की जा रही है",
+        "last_updated": "अंतिम बार अद्यतन किया गया {{date}}",
+        "multiple_shipments_label": "एकाधिक शिपमेंट",
+        "no_tracking_number": "इस शिपमेंट के लिए कोई ट्रैकिंग नंबर नहीं है.",
+        "on_its_way_label": "अपने रास्ते पर",
+        "on_its_way_title": "आपका शिपमेंट रास्ते में है",
+        "out_for_delivery_label": "डिलीवरी के लिए निकले हैं",
+        "out_for_delivery_title": "आपका शिपमेंट डिलीवरी के लिए बाहर है",
+        "resume_tracking": "ट्रैकिंग फिर से शुरू करें",
+        "submitted_label": "प्रस्तुत",
+        "submitted_description": "आदेश और भुगतान विवरण की समीक्षा करें.",
+        "track_shipment": "शिपमेंट ट्रैक करना",
+        "request_return": "वापसी का अनुरोध करें",
+        "view_order_for_details": "विवरण के लिए ऑर्डर देखें",
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "प्राइम ऑर्डर के साथ खरीदें को ट्रैक और प्रबंधित करें",
+            "new_window_disclaimer": "(एक नई विंडो खोलता है)"
+          }
+        }
+      },
+      "status_mark_as_delivered": "वितरित के रूप में चिह्नित करें",
+      "status_title": "आदेश की स्थिति",
+      "buy_again": "फिर से खरीदें",
+      "buy_again_accessibility_label": "ऑर्डर {{orderId}} के लिए दोबारा खरीदें",
+      "manage": "प्रबंधित करना",
+      "manage_accessiblity_label": "ऑर्डर प्रबंधित करें {{orderId}}",
+      "group_title_label": "इसका भाग: {{groupTitle}}",
+      "havent_received_your_delivery": "क्या आपको आपकी डिलीवरी नहीं मिली?",
+      "didnt_pick_up_order": "आपका ऑर्डर नहीं उठाया?",
+      "if_you_didnt_receive_this": "यदि आपको यह प्राप्त नहीं हुआ,",
+      "if_not_received": {
+        "one": "यदि यह प्राप्त नहीं हुआ,",
+        "other": "यदि वे प्राप्त नहीं हुए,"
+      },
+      "let_us_know": "हमें बताइए",
+      "contact_us": "संपर्क करें।"
     }
   },
   "sections": {
