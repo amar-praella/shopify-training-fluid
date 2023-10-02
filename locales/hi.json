@@ -236,7 +236,143 @@
         "item_label": {
           "one": "{{count}} आइटम",
           "other": "{{count}} आइटम"
+        },
+        "empty_cart_label": "आपकी गाड़ी खाली है",
+        "quantity_update": {
+          "page_title": "मात्रा अद्यतन",
+          "title": "मात्रा अद्यतन",
+          "description": "इन वस्तुओं के लिए उपलब्ध मात्राएँ बदल गई हैं और आपके कार्ट में अपडेट कर दी गई हैं।"
+        },
+        "unpurchasable_product": {
+          "title": "अप्राप्य उत्पाद",
+          "header": "आपके कार्ट से कुछ आइटम हटा दिए गए थे",
+          "message": "ये आइटम B2B ऑर्डर के लिए उपलब्ध नहीं हैं।",
+          "status_column_header": "उपलब्ध नहीं है"
+        },
+        "unpurchasable_product_generic": {
+          "title": "अप्राप्य उत्पाद",
+          "header": "आपके कार्ट से कुछ आइटम हटा दिए गए थे",
+          "message": "ये वस्तुएं उपलब्ध नहीं हैं.",
+          "status_column_header": "उपलब्ध नहीं है"
+        },
+        "unshippable_product": {
+          "title": "कोई डिलीवरी उपलब्ध नहीं है",
+          "header": {
+            "one": "%{गिनती} आइटम के लिए कोई डिलीवरी उपलब्ध नहीं है",
+            "other": "%{गिनती} आइटम के लिए कोई डिलीवरी उपलब्ध नहीं है"
+          },
+          "message": {
+            "one": "यह आइटम आपके कार्ट से हटा दिया जाएगा क्योंकि आपके पते पर कोई डिलीवरी विधियां उपलब्ध नहीं हैं।",
+            "other": "ये आइटम आपके कार्ट से हटा दिए जाएंगे क्योंकि आपके पते पर कोई डिलीवरी विधियां उपलब्ध नहीं हैं।"
+          },
+          "status_column_header": "कोई वितरण नही"
+        },
+        "price_update": {
+          "title": "मूल्य अद्यतन",
+          "description": "इन वस्तुओं की कीमतें बदल गई हैं और आपके कार्ट में अपडेट कर दी गई हैं।"
         }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "अनुपलब्ध उत्पाद",
+          "other": "अनुपलब्ध उत्पाद"
+        },
+        "products_not_available": {
+          "one": "यह उत्पाद आपके कार्ट से हटा दिया जाएगा क्योंकि यह आपके देश\/क्षेत्र में उपलब्ध नहीं है।",
+          "other": "ये उत्पाद आपके कार्ट से हटा दिए जाएंगे क्योंकि ये आपके देश\/क्षेत्र में उपलब्ध नहीं हैं।"
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "यह उत्पाद आपके देश\/क्षेत्र में उपलब्ध नहीं है.",
+          "other": "ये उत्पाद आपके देश\/क्षेत्र में उपलब्ध नहीं हैं."
+        },
+        "unavailable_label": "अनुपलब्ध"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{गिनती} आइटम के लिए कोई डिलीवरी उपलब्ध नहीं है",
+            "other": "%{गिनती} आइटम के लिए कोई डिलीवरी उपलब्ध नहीं है"
+          },
+          "message": {
+            "one": "यह आइटम आपके कार्ट से हटा दिया जाएगा क्योंकि आपके पते पर कोई डिलीवरी विधियां उपलब्ध नहीं हैं।",
+            "other": "ये आइटम आपके कार्ट से हटा दिए जाएंगे क्योंकि आपके पते पर कोई डिलीवरी विधियां उपलब्ध नहीं हैं।"
+          },
+          "label": "कोई वितरण नही"
+        }
+      },
+      "order_summary": {
+        "title": "आदेश सारांश",
+        "group_title_label": "\"%{group_title}\" का भाग",
+        "order_name_label": "आदेश %{नाम}",
+        "shopping_cart_label": "शॉपिंग कार्ट",
+        "discount_title": "छूट",
+        "discount_title_stacking": {
+          "one": "छूट",
+          "other": "छूट"
+        },
+        "discount_order_stacking": {
+          "one": "छूट का आदेश करें",
+          "other": "छूट का आदेश दें"
+        },
+        "discount_label": "डिस्काउंट कोड",
+        "discount_placeholder": "डिस्काउंट कोड",
+        "gift_card_title": "उपहार कार्ड",
+        "gift_card_label": "उपहार कार्ड",
+        "gift_card_placeholder": "उपहार कार्ड",
+        "gift_card_and_discount_title": "डिस्काउंट कोड या उपहार कार्ड",
+        "gift_card_and_discount_label": "डिस्काउंट कोड या उपहार कार्ड",
+        "gift_card_and_discount_placeholder": "डिस्काउंट कोड या उपहार कार्ड",
+        "remove_gift_card_label": "साफ़ उपहार कार्ड",
+        "remove_discount_label": "छूट हटाएँ",
+        "free_shipping_discount_label": "मुफ़्त शिपिंग",
+        "applied_free_shipping_discount_label": "लागू",
+        "apply_discount_button_label": "आवेदन करना",
+        "applied_discount_message": "कुल ऑर्डर मूल्य पर %{राशि} की छूट",
+        "discount_has_been_applied": "छूट लागू कर दी गई है",
+        "discount_has_been_removed": "छूट हटा दी गई है",
+        "gift_card_has_been_applied": "उपहार कार्ड लागू कर दिया गया है",
+        "gift_card_has_been_removed": "उपहार कार्ड हटा दिया गया है",
+        "gift_card_subscriptions_notice": "उपहार कार्ड केवल आपके पहले भुगतान पर लागू होंगे",
+        "discount_already_applied": "इस ऑर्डर पर छूट लागू की गई है. आप कोई और छूट नहीं जोड़ सकते.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> डिस्काउंट कोड आपके कार्ट में मौजूद आइटम के लिए मान्य नहीं है",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> डिस्काउंट कोड लागू करने के लिए अपनी शिपिंग जानकारी दर्ज करें",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> डिस्काउंट कोड अभी आपके लिए उपलब्ध नहीं है",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> डिस्काउंट कोड आपके शिपिंग पते के लिए उपलब्ध नहीं है",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> डिस्काउंट कोड का उपयोग पहले ही किया जा चुका है",
+        "subtotal_label": "उप-योग",
+        "shipping_label": "शिपिंग",
+        "pickup_label": "उठाना",
+        "no_pickup_location": "इस ऑर्डर के लिए पिकअप उपलब्ध नहीं है. कोई अन्य डिलीवरी विधि चुनें.",
+        "tip_label": "बख्शीश",
+        "calculating_shipping": "गणना हो रही है...",
+        "calculating": "गणना हो रही है...",
+        "shipping_default_value": "अगले चरण में गणना की गई",
+        "shipping_pending_message": "अभी तक उपलब्ध नहीं",
+        "shipping_policy_link": "शिपिंग लागत",
+        "taxes_label": "करों",
+        "estimated_taxes_label": "अनुमानित कर",
+        "information_estimated_taxes_label": "कर (अनुमानित)",
+        "estimated_taxes_finalization_tooltip_content": "आपके ऑर्डर देने के बाद अंतिम कर और कुल राशि की पुष्टि ईमेल या टेक्स्ट द्वारा की जाएगी।",
+        "order_total_label": "कुल आर्डर",
+        "total_label": "कुल",
+        "total_outstanding_label": "भुगतान की जाने वाली राशि",
+        "partial_total_label": "कुल",
+        "free_total_label": "मुक्त",
+        "paid_label": "चुकाया गया",
+        "payment_due_label": "भुगतान राशि",
+        "vat_label_html": "करों में %{राशि} शामिल है",
+        "discount_and_gift_card_savings_notice": "छूट में %{discount_amount} और उपहार कार्ड में %{gift_card_amount} के बाद",
+        "discount_savings_notice": "छूट में %{discount_amount} के बाद",
+        "gift_card_savings_notice": "उपहार कार्ड में %{gift_card_amount} के बाद",
+        "cost_table_title": "लागत सारांश",
+        "description_label": "विवरण",
+        "price_label": "कीमत",
+        "quantity_label": "मात्रा",
+        "product_change_label": "परिवर्तन",
+        "product_image_label": "उत्पाद का चित्र",
+        "scroll_order_summary": "अधिक आइटम के लिए स्क्रॉल करें",
+        "expand_order_summary": "ऑर्डर सारांश दिखाएँ",
+        "collapse_order_summary": "ऑर्डर सारांश छुपाएं"
       }
     }
   },
