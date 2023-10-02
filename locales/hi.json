@@ -605,7 +605,47 @@
         "location_shipping_address_label": "स्थान शिपिंग पता",
         "use_order_billing_address_label": "ऑर्डर बिलिंग पते का उपयोग करें",
         "use_location_billing_address_label": "स्थान बिलिंग पते का उपयोग करें",
-        "use_location_shipping_address_label": "स्थान शिपिंग पते का उपयोग करें"
+        "use_location_shipping_address_label": "स्थान शिपिंग पते का उपयोग करें",
+        "amazon_payments_label": "अमेज़न पे",
+        "amazon_payments_login_hint": "आपको Amazon से लॉग इन करने के लिए कहा जाएगा।",
+        "amazon_payments_logout": "अमेज़न पे से लॉग आउट करें",
+        "amazon_payments_failed_mfa_challenge": "चयनित भुगतान विधि का उपयोग नहीं किया जा सका. कोई भिन्न विधि चुनें या अपने बैंक या कार्ड जारीकर्ता से संपर्क करें।",
+        "amazon_payments_abandoned_mfa_challenge": "आपका भुगतान पूरा नहीं हो सका. कोई भिन्न भुगतान विधि आज़माएँ या अपने बैंक या कार्ड जारीकर्ता से संपर्क करें।",
+        "amazon_payments_could_not_enqueue_authorize": "आपका भुगतान संसाधित करने में एक समस्या थी. पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+        "title": "भुगतान",
+        "amount_left_to_pay_label": "भुगतान राशि:",
+        "discount_button_action_label": "डिस्काउंट कोड लागू करें",
+        "gift_card_code_label": "उपहार कार्ड कोड",
+        "apply_gift_card_button_label": "आवेदन करना",
+        "gift_card_balance_label": "संतुलन:",
+        "supported_card_brands_more_label": "और अधिक…",
+        "detected_card_brand": "पता लगाया गया कार्ड ब्रांड: {ब्रांड}",
+        "credit_card_vaulting_sign_in_banner_title": "अपना क्रेडिट कार्ड सहेजें",
+        "credit_card_vaulting_sign_in_banner_info": "भविष्य की खरीदारी के लिए अपना क्रेडिट कार्ड सहेजने के लिए लॉग इन करें या एक खाता बनाएं।",
+        "credit_card_vaulting_sign_in_banner_button_label": "लॉग इन करें",
+        "ftd_vault_credit_card_label": "तेज़ चेकआउट के लिए इस क्रेडिट कार्ड को मेरे खाते में सहेजें",
+        "card_number_label": "कार्ड संख्या",
+        "card_number_placeholder": "कार्ड संख्या",
+        "card_pay_with": "के साथ भुगतान करें:",
+        "card_security_notice": "सभी लेनदेन सुरक्षित और एन्क्रिप्टेड हैं।",
+        "card_security_vault_notice": "हमें भविष्य के भुगतानों के लिए आपके विवरण की आवश्यकता है। सभी लेनदेन सुरक्षित और एन्क्रिप्टेड हैं।",
+        "card_information_notice": "सभी लेनदेन सुरक्षित और एन्क्रिप्टेड हैं। क्रेडिट कार्ड की जानकारी कभी संग्रहीत नहीं की जाती.",
+        "name_on_card_label": "कार्ड पर नाम",
+        "name_on_card_placeholder": "कार्ड पर नाम",
+        "card_expired": "खत्म हो चुका",
+        "card_expiry_label": "समाप्ति तिथि (MM\/YY)",
+        "card_expiry_placeholder": "समाप्ति तिथि (MM\/YY)",
+        "credit_card_start_month": "माह प्रारंभ",
+        "credit_card_start_year": "साल की शुरुआत",
+        "delete_customer_mandate_modal_title": "यह भुगतान कार्ड हटाएं?",
+        "delete_customer_mandate_modal_body": "यदि आप यह कार्ड हटाते हैं, तो भुगतान के लिए इसका उपयोग करने से पहले आपको इसे दोबारा जोड़ना होगा।",
+        "delete_customer_mandate_modal_confirm": "कार्ड निकालें",
+        "delete_customer_mandate_modal_cancel": "रद्द करना",
+        "card_verification_value_label": "सुरक्षा कोड",
+        "card_verification_value_placeholder": "सुरक्षा कोड",
+        "card_verification_confirm": "सत्यापन उद्देश्यों के लिए, कृपया अपने कार्ड का सुरक्षा कोड दर्ज करें।",
+        "card_expiry_date_explanation": "कार्ड की समाप्ति तिथि प्रारूप में: महीना, महीना, वर्ष, वर्ष",
+        "card_expiration_month_label": "समाप्ति महीना"
       },
       "billing": {
         "billing_address_title": "बिल प्राप्तकर्ता",
@@ -961,6 +1001,96 @@
       },
       "note": {
         "length_exceeds_maximum": "नोट का आकार घटाकर 5000 या उससे कम अक्षर रखें।"
+      },
+      "shipping": {
+        "subscription_delivery_description": {
+          "subscription_delivery_frequency": {
+            "week": {
+              "one": "हर हफ्ते",
+              "other": "प्रत्येक %{गिनती} सप्ताह"
+            },
+            "month": {
+              "one": "प्रत्येक माह",
+              "other": "हर %{गिनती} महीने"
+            },
+            "year": {
+              "one": "प्रत्येक वर्ष",
+              "other": "प्रत्येक %{गिनती} वर्ष"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} प्रति डिलीवरी",
+          "prepaid_shipping_price_label": "%{shipping_price} प्रति डिलीवरी x %{delivery_interval_count}",
+          "initial_order_discounted": "पहले शिपिंग लागत %{discounted_shipping_cost}, फिर %{frequence_description}",
+          "prepaid_initial_order_discounted": "पहली शिपिंग लागत %{discounted_shipping_price} %{प्रीपेड_डिलीवरी_फ़्रीक्वेंसी}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "पहली शिपिंग लागत %{discounted_shipping_price} %{प्रीपेड_डिलीवरी_फ़्रीक्वेंसी} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "पहले शिपिंग लागत %{discounted_shipping_price} %{prepatti_delivery_frequeency}, फिर %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "पहले शिपिंग लागत %{discounted_shipping_price} %{preread_delivery_frequeency} (%{discounted_cost_per_delivery}), फिर %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "शामिल",
+          "recurring_order_shipping_price": "इसके बाद %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "पहला ऑर्डर शामिल, उसके बाद %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} प्रति डिलीवरी), उसके बाद %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "पहला ऑर्डर मुफ़्त",
+            "other": "प्रथम %{गिनती} ऑर्डर निःशुल्क"
+          },
+          "free_for_first_n_order": {
+            "one": "पहले ऑर्डर के लिए",
+            "other": "पहले %{गिनती} ऑर्डर के लिए"
+          }
+        },
+        "one_time_purchase_shipping": "एक बार की शिपिंग",
+        "address2_add_label": "अपार्टमेंट, सुइट, आदि जोड़ें.",
+        "duties_and_taxes_title": "शुल्क और कर",
+        "shipping_information_required_notice": "शिपिंग जानकारी आवश्यक है. {{link}} .",
+        "shipping_information_redirect_link": "अपनी जानकारी यहां दर्ज करें",
+        "loading_progressive_rates": "अधिक दरें खोज रहे हैं...",
+        "no_other_methods_available": "कोई अन्य विधियां उपलब्ध नहीं हैं",
+        "duties_and_taxes_options": {
+          "ddu_title": "पहुंचने पर भुगतान",
+          "ddu_caption": "अतिरिक्त शुल्क लागू हो सकता है",
+          "ddp_title": "अब भुगतान करें",
+          "ddp_caption": "डिलीवरी पर कोई अतिरिक्त शुल्क नहीं"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{फर्स्टमेथोड}, %{सेकेंडमेथोड}",
+          "with_separator": "%{बाकी}, %{वर्तमान},",
+          "combination": "%{बाकी} और %{वर्तमान}"
+        },
+        "shipping_used_as_billing_notice": "इस ऑर्डर के लिए इसका उपयोग आपके बिलिंग पते के रूप में भी किया जाएगा।",
+        "address_update": "पता अद्यतन करें",
+        "enter_address_manually_label": "पता मैन्युअल रूप से दर्ज करें",
+        "shipping_address_title": "यहां भेजें",
+        "add_address": "किसी भिन्न पते का उपयोग करें",
+        "add_delivery_instructions": "डिलीवरी निर्देश जोड़ें",
+        "edit": "संपादन करना",
+        "delete": "मिटाना",
+        "address_more": "इस पते के लिए और अधिक कार्रवाइयां",
+        "address_edit": "पता संपादित करें",
+        "address_delete": "पता हटाएँ",
+        "address_confirm": "क्या आप वाकई इस पते को अपने खाते से हटाना चाहते हैं?",
+        "address_form": {
+          "add_address": "पता जोड़ें",
+          "save": "बचाना",
+          "cancel": "रद्द करना",
+          "generic_error": "आपके पते को सुरक्षित करने में समस्या थी। कृपया पुन: प्रयास करें।",
+          "one_time_address_subtitle": "इस आदेश के लिए एक बार के पते का उपयोग करें"
+        },
+        "different_shipping_method_summary": "उपलब्ध शिपिंग विधियों को देखने के लिए एक अलग शिपिंग पता दर्ज करें",
+        "invalid_shipping_method_summary": "उपलब्ध शिपिंग विधियों को देखने के लिए एक वैध शिपिंग पता दर्ज करें",
+        "method_summary": {
+          "incomplete_address_entered": "उपलब्ध शिपिंग विधियों को देखने के लिए पूरा शिपिंग पता दर्ज करें",
+          "incomplete_address_selected": "उपलब्ध शिपिंग विधियों को देखने के लिए पूरा शिपिंग पता चुनें"
+        },
+        "local_pickup": {
+          "search_address": "पता खोजें",
+          "rollup_title": "लेने की जगह"
+        },
+        "missing_shipping_address": "शिपिंग पता गुम है"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "अतिरिक्त जानकारी"
+        }
       }
     },
     "pagination": {
