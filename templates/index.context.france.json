@@ -4,5 +4,27 @@
     "market": "france"
   },
   "sections": {
-  }
+    "162710985888a5f3c0": {
+      "settings": {
+        "image_mobile": "shopify:\/\/shop_images\/man-adjusts-blue-tuxedo-bowtie_925x_12721b18-5227-4d28-aa65-e2d7541308b6.jpg",
+        "image": "shopify:\/\/shop_images\/menswear-blue-zip-up-jacket_925x_0a8e01f5-2755-4dd2-abec-dc00e3d4dcc9.jpg"
+      },
+      "blocks": {
+      }
+    },
+    "16270454495feb2a63": {
+      "settings": {
+        "image": "shopify:\/\/shop_images\/smiling-woman-poses_925x_d392b94b-a09b-4b4f-a500-4089564a14a9.jpg"
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "2b865f5c-7e70-4f62-8620-e3471df1555f",
+    "162710985888a5f3c0",
+    "16273012625e8a6f4e",
+    "16271097114d5db4ef",
+    "16270454495feb2a63"
+  ]
 }
