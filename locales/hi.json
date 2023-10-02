@@ -518,7 +518,92 @@
         "handle_email_invalid": "एक वैध ईमेल प्रविष्ट करें",
         "email_invalid": "एक वैध ईमेल प्रविष्ट करें",
         "email_or_phone_blank": "एक ईमेल या फ़ोन नंबर दर्ज करें",
-        "email_or_phone_invalid": "एक वैध ईमेल या मोबाइल फ़ोन नंबर दर्ज करें"
+        "email_or_phone_invalid": "एक वैध ईमेल या मोबाइल फ़ोन नंबर दर्ज करें",
+        "address_first_name_blank": "पहला नाम दर्ज करें",
+        "address_first_name_too_long": "पहला नाम बहुत लंबा है (अधिकतम 255 अक्षर)",
+        "address_first_name_contains_emojis": "प्रथम नाम में इमोजी शामिल नहीं हो सकते",
+        "address_first_name_contains_html_tags": "प्रथम नाम में HTML टैग नहीं हो सकते.",
+        "address_first_name_contains_url": "प्रथम नाम में URL नहीं हो सकता",
+        "address_last_name_blank": "एक अंतिम नाम दर्ज करें",
+        "address_last_name_too_long": "अंतिम नाम बहुत लंबा है (अधिकतम 255 अक्षर)",
+        "address_last_name_contains_emojis": "अंतिम नाम में इमोजी नहीं हो सकते",
+        "address_last_name_contains_html_tags": "अंतिम नाम में HTML टैग नहीं हो सकते.",
+        "address_last_name_contains_url": "अंतिम नाम में URL नहीं हो सकता",
+        "address_address1_blank": "पता दर्ज करें",
+        "address_address1_too_long": "पहली पता पंक्ति बहुत लंबी है (अधिकतम 255 अक्षर है)",
+        "address_address1_contains_emojis": "एड्रेस1 में इमोजी नहीं हो सकते",
+        "address_address1_contains_html_tags": "पता1 में HTML टैग नहीं हो सकते.",
+        "address_address2_blank": "एक अपार्टमेंट, सुइट, आदि दर्ज करें",
+        "address_address2_too_long": "दूसरी पता पंक्ति बहुत लंबी है (अधिकतम 255 अक्षर है)",
+        "address_address2_contains_emojis": "एड्रेस2 में इमोजी नहीं हो सकते",
+        "address_address2_contains_html_tags": "एड्रेस2 में HTML टैग नहीं हो सकते।",
+        "address_city_blank": "एक शहर दर्ज करें",
+        "address_city_too_long": "शहर बहुत लंबा है (अधिकतम 255 अक्षर)",
+        "address_city_contains_emojis": "शहर में इमोजी शामिल नहीं हो सकते",
+        "address_city_contains_html_tags": "शहर में HTML टैग नहीं हो सकते.",
+        "address_country_blank": "एक देश\/क्षेत्र चुनें",
+        "address_country_not_supported": "हम इस देश या क्षेत्र में सामान नहीं भेजते हैं। नया शिपिंग पता दर्ज करें और पुनः प्रयास करें।",
+        "address_province_blank": "एक राज्य\/प्रांत चुनें",
+        "address_company_blank": "कंपनी का नाम दर्ज करें",
+        "address_company_too_long": "कंपनी का नाम बहुत लंबा है (अधिकतम 255 अक्षर)",
+        "address_company_contains_emojis": "कंपनी इमोजी शामिल नहीं कर सकती",
+        "address_company_contains_html_tags": "कंपनी में HTML टैग नहीं हो सकते.",
+        "address_phone_blank": "एक वैध फ़ोन नंबर दर्ज करें",
+        "address_phone_contains_emojis": "फ़ोन नंबर में इमोजी नहीं हो सकते",
+        "address_zip_blank": "एक ज़िप\/डाक कोड दर्ज करें",
+        "address_zip_too_long": "ज़िप\/पोस्टल कोड बहुत लंबा है (अधिकतम 255 अक्षर है)",
+        "address_zip_not_supported": "यह स्थान समर्थित नहीं है.",
+        "address_zip_invalid_for_country": "%{देश} के लिए एक वैध ज़िप\/पोस्टल कोड दर्ज करें",
+        "address_zip_invalid_for_province": "%{प्रांत} के लिए एक वैध ज़िप\/डाक कोड दर्ज करें",
+        "address_zip_invalid_for_country_and_province": "%{प्रांत}, %{देश} के लिए एक वैध ज़िप \/ पोस्टल कोड दर्ज करें",
+        "address_zip_contains_emojis": "ज़िप\/पोस्टल कोड में इमोजी नहीं हो सकते",
+        "credit_card_name_blank": "अपना नाम बिल्कुल वैसा ही दर्ज करें जैसा आपके कार्ड पर लिखा है",
+        "credit_card_name_invalid": "अपना नाम बिल्कुल वैसा ही दर्ज करें जैसा आपके कार्ड पर लिखा है",
+        "credit_card_number_invalid": "एक वैध कार्ड नंबर दर्ज करें",
+        "credit_card_expiry_invalid": "एक वैध समाप्ति तिथि दर्ज करें",
+        "credit_card_month_invalid": "वैध समाप्ति माह दर्ज करें",
+        "credit_card_year_invalid": "वैध समाप्ति वर्ष दर्ज करें",
+        "credit_card_start_invalid": "वैध कार्ड आरंभ तिथि दर्ज करें",
+        "credit_card_start_month_invalid": "वैध कार्ड प्रारंभ माह दर्ज करें",
+        "credit_card_start_year_invalid": "वैध कार्ड प्रारंभ वर्ष दर्ज करें",
+        "credit_card_verification_value_blank": "अपने कार्ड पर सीवीवी या सुरक्षा कोड दर्ज करें",
+        "delivery_line_detail_changed": "कुछ डिलीवरी विवरण बदल गए होंगे. अपनी शिपिंग विधि सत्यापित करें और पुनः प्रयास करें।",
+        "delivery_zone_not_found": "निर्दिष्ट क्षेत्र निर्दिष्ट देश में नहीं पाया गया.",
+        "reduction_code_code_not_found": "वैध डिस्काउंट कोड या उपहार कार्ड दर्ज करें",
+        "reduction_code_discount_not_found": "एक वैध छूट कोड दर्ज करें",
+        "reduction_code_gift_card_code_invalid": "एक वैध उपहार कार्ड दर्ज करें",
+        "reduction_code_gift_card_unusable": "आप एक उपहार कार्ड का उपयोग दूसरा उपहार कार्ड खरीदने के लिए नहीं कर सकते",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "उपहार कार्ड स्थगित खरीद विकल्पों के साथ समर्थित नहीं हैं।",
+        "shipping_line_phone_blank": "इस डिलीवरी विधि का उपयोग करने के लिए एक फ़ोन नंबर दर्ज करें",
+        "shipping_line_phone_invalid": "एक वैध फ़ोन नंबर दर्ज करें",
+        "tips_invalid_tip_amount": "%{राशि} से कम टिप दर्ज करें",
+        "gift_card_already_applied": "यह उपहार कार्ड आपके ऑर्डर पर पहले ही लागू किया जा चुका है",
+        "gift_card_disabled": "यह उपहार कार्ड अब उपलब्ध नहीं है",
+        "gift_card_expired": "यह उपहार कार्ड समाप्त हो गया है",
+        "gift_card_depleted": "इस उपहार कार्ड में कोई धनराशि नहीं बची है",
+        "gift_card_currency_mismatch": "इस ऑर्डर के साथ केवल %{checkout_currency} में उपहार कार्ड का उपयोग किया जा सकता है",
+        "gift_cards_not_supported_with_deferred_purchase_options": "उपहार कार्ड स्थगित खरीद विकल्पों के साथ समर्थित नहीं हैं।",
+        "gift_card_buying_gift_card": "आप एक उपहार कार्ड का उपयोग दूसरा उपहार कार्ड खरीदने के लिए नहीं कर सकते",
+        "payment_gateway_needs_paid_plan_error": "यह भुगतान विधि अभी स्टोर पर उपलब्ध नहीं है",
+        "payment_gateway_not_in_test_mode": "आदेशों का परीक्षण करने के लिए सेटअप नहीं है। यह स्टोर वास्तविक ऑर्डर या वास्तविक भुगतान स्वीकार नहीं कर सकता।",
+        "payment_gateway_incompatible_with_multi_currency": "इस चेकआउट को अपनी स्थानीय मुद्रा में पूरा करने के लिए, आपको क्रेडिट कार्ड से भुगतान करना होगा।",
+        "payment_gateway_unsupported_for_subscriptions": "यह भुगतान विधि सदस्यता आदेशों के लिए उपलब्ध नहीं है।",
+        "payment_gateway_unsupported_for_deferred_purchase_options": "यह भुगतान विधि स्थगित खरीदारी विकल्पों के लिए उपलब्ध नहीं है।",
+        "payment_gateway_unsupported_for_country": "यह भुगतान विधि आपके शिपिंग देश के लिए उपलब्ध नहीं है।",
+        "payment_gateway_unsupported_for_development_store_html": "परीक्षण आदेश देने के लिए, आपको परीक्षण भुगतान गेटवे का उपयोग करना होगा। <a href=\"%{docs_link}\">डेवलपमेंट स्टोर्स में परीक्षण ऑर्डर<\/a> के बारे में और जानें।",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "आप इस भुगतान प्रोसेसर के साथ विकास स्टोर ऑर्डर की सीमा तक पहुंच गए हैं। दूसरा ऑर्डर देने के लिए, आपको परीक्षण भुगतान गेटवे का उपयोग करना होगा। <a href=\"%{docs_link}\">डेवलपमेंट स्टोर्स में परीक्षण ऑर्डर<\/a> के बारे में और जानें।",
+        "purchase_options_agreement_blank": "अपनी खरीदारी जारी रखने के लिए, स्थगित या आवर्ती खरीद शर्तों से सहमत हों।",
+        "physical_gift_card_invalid_quantity": "भौतिक उपहार कार्ड लाइन आइटम में एक मात्रा होनी चाहिए जो उपहार कार्ड कोड की संख्या से मेल खाती हो।",
+        "physical_gift_card_duplicate_code": "भौतिक उपहार कार्ड लाइन आइटम में डुप्लिकेट कोड है।",
+        "physical_gift_card_invalid_code": "भौतिक उपहार कार्ड कोड अमान्य है.",
+        "email_blank": "एक ईमेल दर्ज करें",
+        "phone_blank": "एक फोन नंबर दर्ज करें",
+        "address_country_invalid": "सूची से एक देश\/क्षेत्र चुनें",
+        "address_zip_invalid": "एक वैध ज़िप\/डाक कोड दर्ज करें",
+        "gift_card_invalid": "उपहार कार्ड \"••••%{last_four_characters}\" अब मान्य नहीं है",
+        "vaulting_agreement_blank": "जारी रखने के लिए, आपको अपना नया क्रेडिट कार्ड सहेजना होगा क्योंकि इस ऑर्डर का भुगतान बाद की तारीख में होगा।",
+        "sms_marketing_phone_invalid": "एक वैध फ़ोन नंबर दर्ज करें",
+        "address_suggestion_did_you_mean_html": "क्या आपका मतलब %{html} था?"
       },
       "throttle": {
         "inventory": {
@@ -688,10 +773,163 @@
         "errors": {
           "unavailable": {
             "title": "{{walletName}} उपलब्ध नहीं है",
-            "description": "{{walletName}} उपलब्ध नहीं था। किसी भिन्न भुगतान विधि का उपयोग करें या बाद में पुनः प्रयास करें।"
+            "description": "{{walletName}} उपलब्ध नहीं था। किसी भिन्न भुगतान विधि का उपयोग करें या बाद में पुनः प्रयास करें।",
+            "instructions": "{{walletName}} के साथ एक समस्या थी। पुनः प्रयास करने या किसी भिन्न तरीके से जाँच करने के लिए स्टोर पर लौटें।"
+          },
+          "generic": "{{walletName}} के साथ एक समस्या थी। पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+          "terminal": "{{walletName}} के साथ एक समस्या थी। कृपया किसी भिन्न भुगतान विधि का उपयोग करें.",
+          "detour": {
+            "stock_problems": "कुछ वस्तुएँ अब उपलब्ध नहीं हैं. {{walletName}} बंद करें और पुनः प्रयास करें।",
+            "price_change": "कुछ वस्तुओं की कीमतें बदल गई हैं. अपने ऑर्डर की समीक्षा करने और पुनः प्रयास करने के लिए {{walletName}} को बंद करें।",
+            "queue": "आपको चेकआउट करने के लिए कतार में रखा गया है। जारी रखने के लिए {{walletName}} बंद करें।"
+          },
+          "unsupported": {
+            "address": "व्यापारी इस पते पर डिलीवरी नहीं कर सकता",
+            "postal_code": "यह स्थान समर्थित नहीं है"
+          },
+          "outdated": {
+            "shipping_method": "आपके ऑर्डर के लिए शिपिंग विकल्प बदल गए हैं। अपने चयन की समीक्षा करें."
+          },
+          "invalid": {
+            "shipping_address": "एक वैध शिपिंग पता दर्ज करें",
+            "billing_address": "एक वैध बिलिंग पता दर्ज करें",
+            "shipping_option": "एक वैध शिपिंग विकल्प चुनें",
+            "email": "एक वैध ईमेल प्रविष्ट करें",
+            "zone": "एक वैध राज्य\/प्रांत दर्ज करें",
+            "postal_code": "एक वैध ज़िप\/डाक कोड दर्ज करें",
+            "reduction_code": "वैध डिस्काउंट कोड या उपहार कार्ड दर्ज करें"
+          },
+          "missing": {
+            "first_name": "पहला नाम दर्ज करें",
+            "last_name": "एक अंतिम नाम दर्ज करें",
+            "address1": "पता दर्ज करें",
+            "address2": "एक अपार्टमेंट, सुइट, आदि दर्ज करें",
+            "city": "एक शहर दर्ज करें",
+            "province": "एक राज्य\/प्रांत चुनें",
+            "country": "एक देश\/क्षेत्र चुनें",
+            "zip": "एक ज़िप\/डाक कोड दर्ज करें",
+            "phone": "एक फोन नंबर दर्ज करें"
+          },
+          "formatting": {
+            "name_contains_emojis": "अपने नाम से इमोजी हटाएं",
+            "postal_code_contains_emoji": "अपने पोस्टल कोड से इमोजी हटाएं",
+            "first_name_too_long": "प्रथम नाम में बहुत अधिक अक्षर हैं",
+            "last_name_too_long": "अंतिम नाम में बहुत अधिक अक्षर हैं"
           }
         }
+      },
+      "store_credit_errors": {
+        "generic_error": "आपके स्टोर क्रेडिट में कोई समस्या थी. पुनः प्रयास करें या पृष्ठ पुनः लोड करें।"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "उपहार कार्ड आपके ऑर्डर पर पहले ही लागू किया जा चुका है",
+          "insufficient_funds": "इस उपहार कार्ड में कोई धनराशि नहीं बची है",
+          "expired": "यह उपहार कार्ड समाप्त हो गया है",
+          "not_available": "यह उपहार कार्ड अब उपलब्ध नहीं है",
+          "invalid": "एक वैध उपहार कार्ड दर्ज करें",
+          "currency_mismatch": "केवल %{shop_currency} में उपहार कार्ड स्वीकार किए जाते हैं",
+          "generic": "उपहार कार्ड चेकआउट में नहीं जोड़ा जा सका"
+        }
+      },
+      "payment_errors": {
+        "method_not_available": "अनुरोधित भुगतान विधि उपलब्ध नहीं है.",
+        "generic_error": "आपका भुगतान संसाधित करने में एक समस्या थी. पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+        "rejected_transaction": "आपका भुगतान अस्वीकृत किया गया था। पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+        "credit_card_processing": "तकनीकी कारणों से आपका भुगतान संसाधित नहीं किया जा सकता. कुछ मिनटों में पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+        "checkout_amount_changed": "आपका भुगतान संसाधित नहीं किया जा सका क्योंकि चेकआउट के समय देय राशि बदल गई है। कृपया अपना ऑर्डर जांचें और पुनः प्रयास करें।",
+        "deferred_payment_not_allowed": "आस्थगित भुगतान की अनुमति नहीं है. कृपया अपना ऑर्डर जांचें और पुनः प्रयास करें।",
+        "deferred_payment_required": "इस आदेश के लिए विलंबित भुगतान की आवश्यकता है. कृपया अपना ऑर्डर जांचें और पुनः प्रयास करें।"
+      },
+      "note": {
+        "length_exceeds_maximum": "नोट का आकार घटाकर 5000 या उससे कम अक्षर रखें।"
       }
+    },
+    "pagination": {
+      "previous": "पहले का",
+      "next": "अगला"
+    },
+    "links": {
+      "powered_by_shopify": "Shopify द्वारा संचालित",
+      "learn_more": "और अधिक जानें"
+    },
+    "feed": {
+      "more": "अधिक"
+    },
+    "attributes": {
+      "email": "ईमेल",
+      "password": "पासवर्ड",
+      "password_confirmation": "पासवर्ड की पुष्टि",
+      "first_name": "पहला नाम",
+      "last_name": "उपनाम",
+      "body": "शरीर",
+      "signature": "पता"
+    },
+    "addresses": {
+      "zip_code": "ज़िप कोड",
+      "postal_code": "डाक कोड",
+      "postcode": "पोस्टकोड",
+      "pincode": "पिन कोड",
+      "region": "क्षेत्र",
+      "prefecture": "प्रान्त",
+      "province": "प्रांत",
+      "state": "राज्य",
+      "state_and_territory": "राज्य\/क्षेत्र",
+      "county": "काउंटी",
+      "emirate": "अमीरात",
+      "governorate": "प्रशासनिक",
+      "confirm": "क्या आप वाकई यह पता हटाना चाहते हैं?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "प्रदर्शित",
+        "best_selling": "सर्वश्रेष्ठ बिक्री",
+        "az": "वर्णानुक्रम में, AZ",
+        "za": "वर्णानुक्रम में, ZA",
+        "price_ascending": "कीमतों का उतार - चढ़ाव",
+        "price_descending": "कीमत, उच्च से निम्न",
+        "date_ascending": "तारीख़, पुरानी से नई",
+        "date_descending": "दिनांक, नई से पुरानी"
+      }
+    },
+    "errors": {
+      "blank": "रिक्त नहीं हो सकता",
+      "blocked_address": "यह स्थान समर्थित नहीं है.",
+      "credit_card_session_expired": "क्रेडिट कार्ड प्राधिकरण की समय सीमा समाप्त हो गई है, कृपया अपनी भुगतान जानकारी दोबारा दर्ज करें। आपके कार्ड से शुल्क नहीं लिया गया है.",
+      "empty": "खाली नहीं हो सकता",
+      "invalid_email": "एक वैध ई - मेल पता होना चाहिए",
+      "discount_disabled": "यह छूट अक्षम कर दी गई है",
+      "discount_expired": "यह छूट अब मान्य नहीं है",
+      "discount_limit_reached": "यह छूट इसकी उपयोग सीमा तक पहुंच गई है",
+      "discount_not_found": "दर्ज किए गए कोड से मेल खाने वाली वैध छूट नहीं मिल सकी",
+      "customer_already_used_once_per_customer_discount_notice": "यह छूट इसकी उपयोग सीमा तक पहुंच गई है",
+      "gift_card_already_applied": "आपके चेकआउट पर कोड पहले ही लागू किया जा चुका है",
+      "gift_card_code_invalid": "कोड अमान्य है",
+      "gift_card_currency_mismatch": "आपका उपहार कार्ड %{gift_card_currency} में है. इसे %{checkout_currency} में पुनः जारी कराने के लिए हमसे संपर्क करें।",
+      "gift_card_depleted": "इस उपहार कार्ड पर कोई धनराशि शेष नहीं है",
+      "gift_card_disabled": "उपहार कार्ड अक्षम है",
+      "gift_card_expired": "उपहार कार्ड समाप्त हो गया है",
+      "invalid": "इनवैलिड है",
+      "bad_domain": "इसमें एक अमान्य डोमेन नाम है",
+      "taken": "पहले से ही लिया जा चुका है",
+      "contains_html_tags": "HTML टैग शामिल नहीं हो सकते",
+      "too_short": "बहुत छोटा है (न्यूनतम %{गिनती} वर्ण है)",
+      "too_long": "बहुत लंबा है (अधिकतम %{गिनती} वर्ण है)",
+      "password_mismatch": "दिए गए पासवर्ड से मेल खाना चाहिए",
+      "contains_spaces": "रिक्त स्थान के साथ प्रारंभ या समाप्त होता है।",
+      "email_domain_invalid": "प्रदाता समर्थित नहीं है",
+      "invalid_for_country": "%{देश} के लिए मान्य नहीं है",
+      "invalid_for_country_and_province": "%{प्रांत} और %{देश} के लिए मान्य नहीं है",
+      "invalid_province_in_country": "%{देश} में वैध प्रांत नहीं है",
+      "invalid_state_in_country": "%{देश} में मान्य स्थिति नहीं है",
+      "invalid_region_in_country": "%{देश} में मान्य क्षेत्र नहीं है",
+      "less_than_or_equal_to": "%{गिनती} से कम या उसके बराबर होना चाहिए",
+      "not_supported": "समर्थित नहीं है",
+      "full_name_required": "पहला नाम और अंतिम नाम दर्ज करें",
+      "invalid_for_card_type": "मान्य नहीं है",
+      "invalid_type": "क्षमा करें, हम इस प्रकार के कार्ड स्वीकार नहीं करते हैं",
+      "invalid_format": "प्रारूप मान्य नहीं है",
+      "expired": "निधन हो गया"
     }
   },
   "templates": {
