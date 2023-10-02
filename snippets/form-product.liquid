@@ -61,47 +61,85 @@
         {%- endif -%}
       {% endunless %}
 
-      <div class="quantity-wrapper mb-4" data-qty-container>
-        <span class="fw-medium text-uppercase font-size-sm mb-2" title="Label {{ 'products.product.quantity.label' | t }}">{{ 'products.product.quantity.label' | t }}</span>
-        <div class="input-group input-group-sm">
-          <div class="input-group-prepend">
-            <a href="#" class="input-group-text btn disabled" rel="nofollow" aria-label="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}" title="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}" data-for="decrease" data-qty-btn>
-              <span class="btn-decrease"><span class="icon-minus"></span></span>
-              <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-            </a>
-          </div>
-          <input type="number" name="quantity" aria-label="{{ 'products.product.quantity.input_label' | t: product: product.title | escape }}" value="1" step="1" min="1" inputmode="numeric" data-qty-input class="quantity form-control text-center" readonly>
-          <div class="input-group-append">
-            <a href="#" class="input-group-text btn" rel="nofollow" aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}" title="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}" data-for="increase" data-qty-btn>
-              <span class="btn-increase"><span class="icon-plus"></span></span>
-              <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-            </a>
-          </div>
+      <div class="d-flex align-items-center">
+        <div class="quantity-wrapper mb-4" data-qty-container>
+          <span class="fw-medium text-uppercase font-size-sm mb-2" title="Label {{ 'products.product.quantity.label' | t }}">{{ 'products.product.quantity.label' | t }}</span>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <a href="#" class="input-group-text btn disabled" rel="nofollow" aria-label="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}" title="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}" data-for="decrease" data-qty-btn>
+                <span class="btn-decrease"><span class="icon-minus"></span></span>
+                <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+              </a>
+            </div>
+            {%- liquid
+              assign qty = 1
+              if product.quantity_price_breaks_configured?
+              assign qty = product.selected_or_first_available_variant.quantity_rule.min
+              endif 
+            -%}
+            <input type="number" name="quantity" aria-label="{{ 'products.product.quantity.input_label' | t: product: product.title | escape }}" 
+              value="{{ qty }}" 
+              step="1" min="1" inputmode="numeric" data-qty-input class="quantity form-control text-center" readonly>
+            <div class="input-group-append">
+              <a href="#" class="input-group-text btn" rel="nofollow" aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}" title="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}" data-for="increase" data-qty-btn>
+                <span class="btn-increase"><span class="icon-plus"></span></span>
+                <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+              </a>
+            </div>
+          </div>  
         </div>
-
         {%- if product.quantity_price_breaks_configured? -%}
-        <div class="mt-2">
-          {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
-            <span class="caption-large">{{ 'products.product.volume_pricing.title' | t }}</span>
-            <ul class="list-unstyled no-js-hidden">
-              <li>
-                <span>{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
-                {%- assign price = product.selected_or_first_available_variant.price | money_with_currency -%}
-                <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: variant_price }}">{{ 'products.product.volume_pricing.each' | t: money: price }}</span>
-              </li>
-              {%- for price_break in product.selected_or_first_available_variant.quantity_price_breaks -%}
-                {%- assign price_break_price = price_break.price | money_with_currency -%}
-                <li>
-                  <span>{{ price_break.minimum_quantity }}<span aria-hidden="true">+</span></span>
-                  <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price_break_price }}">{{ 'products.product.volume_pricing.each' | t: money: price_break_price }}</span>
-                </li> 
-              {%- endfor -%}
-            </ul>
+          <p class="price-per-item ms-2 mb-0" data-pricePerItem>
+            {%- liquid
+              assign volume_pricing_array = product.selected_or_first_available_variant.quantity_price_breaks | sort: 'quantity' | reverse
+              assign price_break_price = product.selected_or_first_available_variant.price | money
+              for price_break in volume_pricing_array
+                if current_qty_for_volume_pricing >= price_break.minimum_quantity
+                  assign price_break_price = price_break.price | money
+                endif 
+              endfor
+            -%}
+            {{ 'products.product.at' | t }} {{ price_break_price }}
+          </p>
         {%- endif -%}
-        </div>
-      {%- endif -%}
-        
       </div>
+
+      {%- if product.quantity_price_breaks_configured? -%}
+      <script data-priceBrakJson type="application/json">
+        {
+          {%- for variant in product.variants -%}
+            {%- if variant.quantity_price_breaks.size > 0 -%}
+              {%- unless forloop.first -%},{%- endunless -%}
+              "{{ variant.id }}": [
+                  {%- for price_break in variant.quantity_price_breaks -%}
+                    {%- unless forloop.first -%},{%- endunless -%}{
+                      "price": {{ price_break.price }},
+                      "minimum_quantity": {{ price_break.minimum_quantity }}
+                    }
+                  {%- endfor -%}
+                ]
+            {%- endif -%} 
+          {%- endfor -%}
+        }
+      </script>
+      <div class="mt-2" data-priceVolume {% if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}style="display:none"{%- endif -%}> 
+        <span class="caption-large">{{ 'products.product.volume_pricing.title' | t }}</span>
+        <ul class="list-unstyled no-js-hidden">
+          <li>
+            <span>{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
+            {%- assign price = product.selected_or_first_available_variant.price | money_with_currency -%}
+            <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: variant_price }}">{{ 'products.product.volume_pricing.each' | t: money: price }}</span>
+          </li>
+          {%- for price_break in product.selected_or_first_available_variant.quantity_price_breaks -%}
+            {%- assign price_break_price = price_break.price | money_with_currency -%}
+            <li>
+              <span>{{ price_break.minimum_quantity }}<span aria-hidden="true">+</span></span>
+              <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price_break_price }}">{{ 'products.product.volume_pricing.each' | t: money: price_break_price }}</span>
+            </li> 
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
     </div>
 
   </div>
@@ -125,8 +163,8 @@
   </noscript>
 
 <div class="row">
-    <div class="col-12 d-flex">
-        <button class="btn btn-outline-dark btn-sm flex-grow-1"
+    <div class="col-12">
+        <button class="btn btn-outline-dark btn-sm flex-grow-1 w-100"
             type="submit"
             name="add"
             aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
