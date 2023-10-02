@@ -4,5 +4,34 @@
     "market": "us"
   },
   "sections": {
-  }
+    "2b865f5c-7e70-4f62-8620-e3471df1555f": {
+      "settings": {
+        "section_bg_color": "#582b31",
+        "section_txt_color": "#000000"
+      },
+      "blocks": {
+      }
+    },
+    "16270344513581fee7": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+        "21b79b13-165a-4ae3-9277-e3091171e49d": {
+          "settings": {
+            "title": "Welcome to USA",
+            "image": "shopify:\/\/shop_images\/leather-jacket-and-tea_925x_68bcaf6f-65c1-48f7-9b93-0a4f5c000720.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/city-woman-fashion_925x_2x_48f636f5-8a78-4f91-b840-2264783d6555.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "21b79b13-165a-4ae3-9277-e3091171e49d"
+      ]
+    }
+  },
+  "order": [
+    "16270344513581fee7",
+    "2b865f5c-7e70-4f62-8620-e3471df1555f"
+  ]
 }
