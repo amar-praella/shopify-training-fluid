@@ -101,6 +101,7 @@
       "description": "Description",
       "on_sale": "Sale",
       "price_range": "From {{ min }} to {{ max }}",
+      "at": "at",
       "volume_pricing": {
         "each": "{{ money }}",
         "title": "Volume Pricing",

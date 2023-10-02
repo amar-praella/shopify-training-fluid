@@ -1,7 +1,9 @@
 /**
  * Product Form Components
- *
+ * @variable "window.globalVariables.product.currentVariant" get current variant Data
  */
+
+
 class ProductForm extends HTMLElement {
   constructor() {
     super();
@@ -9,8 +11,15 @@ class ProductForm extends HTMLElement {
     this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
     this.cartElement = document.querySelector('ajax-cart');
 
+    this.pricePerItemEle = this.querySelector('[data-pricePerItem');
+    this.price_breaks = this.querySelector('[data-priceBrakJson');
+    if (this.price_breaks) this.price_breaks =  JSON.parse(this.price_breaks.textContent);
+
+    this.qtyInput = this.querySelector('[data-qty-container] [data-qty-input]');
     this.qtyBtns = this.querySelectorAll('[data-qty-btn]');
     this.qtyBtns.forEach(qtyBtn => qtyBtn.addEventListener('click', this.manageQtyBtn.bind(this)));
+
+    this.setPriceBreakQnt();
   }
 
   /**
@@ -69,32 +78,102 @@ class ProductForm extends HTMLElement {
    * Product Form Quantity Input update action
    *
    * @param {event} Event instance
+   * @event "variant:changed" execute when variant is changed
    */
   manageQtyBtn(event) {
     event.preventDefault();
+    let currentVariant = window.globalVariables.product.currentVariant;
+    let qntInc = currentVariant?.quantity_rule?.increment ? currentVariant.quantity_rule.increment : 1;
+    let qntMax = currentVariant?.quantity_rule?.max;
+    let qntMin = currentVariant?.quantity_rule?.min ? currentVariant.quantity_rule.min : 1;
 
     let currentTarget = event.currentTarget;
     let action = currentTarget.dataset.for || 'increase';
     let $qtyInput = currentTarget.closest('[data-qty-container]').querySelector('[data-qty-input]');
     let currentQty = parseInt($qtyInput.value) || 1;
-    let finalQty = 1;
-    let decreaseQtyBtn = currentTarget.closest('[data-qty-container]').querySelector('[data-for="decrease"]');
 
-    // set quantity increment
-    console.log(this.currentVariant,'test');
-    if(action == 'decrease' && currentQty <= 1){
+    let finalQty = qntMin ? qntMin : 1;
+
+    let decreaseQtyBtn = currentTarget.closest('[data-qty-container]').querySelector('[data-for="decrease"]');
+    let increaseQtyBtn = currentTarget.closest('[data-qty-container]').querySelector('[data-for="increase"]');
+
+    if(action == 'decrease' && currentQty <= qntMin){
       if(decreaseQtyBtn) decreaseQtyBtn.classList.add('disabled');
       return false;
     }else if(action == 'decrease'){
-      finalQty = currentQty - 1;
-      finalQty == 1 ? decreaseQtyBtn.classList.add('disabled') : decreaseQtyBtn.classList.remove('disabled');
-    }else{
+      finalQty = currentQty - qntInc;
+      finalQty == qntMin ? decreaseQtyBtn.classList.add('disabled') : decreaseQtyBtn.classList.remove('disabled');
+    } else {
       if(decreaseQtyBtn) decreaseQtyBtn.classList.remove('disabled');
-      finalQty = currentQty + 1;
+      finalQty = currentQty + qntInc;
     }
 
     $qtyInput.value = finalQty;
+    if(finalQty == qntMax) increaseQtyBtn.classList.add('disabled') 
+    else increaseQtyBtn.classList.remove('disabled');
+
+    if(this.price_breaks) {
+      let currPriceBreak = this.price_breaks[currentVariant.id];
+      if (currPriceBreak) {
+        let qntPrice = currPriceBreak.toReversed().filter(data => {
+          return finalQty >= data.minimum_quantity;
+        }); 
+        let breakPrice; 
+        if (qntPrice.length > 0) {
+          breakPrice = Shopify.formatMoney(qntPrice[0].price, window.globalVariables.money_format);
+        } else {
+          breakPrice = Shopify.formatMoney(currentVariant.price, window.globalVariables.money_format);
+        }
+
+        this.pricePerItemEle.innerHTML = `${window.variantStrings.at} ${breakPrice}`;
+      } else {
+        this.pricePerItemEle.innerHTML = `${window.variantStrings.at} ${Shopify.formatMoney(currentVariant.price, window.globalVariables.money_format)}`;
+      }
+    }
   }
+
+  /**
+    * Handle volume Quantity in variant change
+    * Handle price per itme next to quantity selector
+  */
+  setPriceBreakQnt() {
+    document.addEventListener('variant:changed', (e) => {
+      let minQnt = e.detail.quantity_rule.min ? e.detail.quantity_rule.min : 1;
+      if (parseInt(this.qtyInput.value) != e.detail.quantity_rule.min) this.qtyInput.value = minQnt;
+      this.qtyBtns.forEach(btn => {
+        if(btn.dataset.for == "increase") btn.classList.remove('disabled');
+      })
+
+      this.pricePerItemEle.innerHTML = `${window.variantStrings.at} ${Shopify.formatMoney(e.detail.price, window.globalVariables.money_format)}`;
+
+      if (this.price_breaks) {
+        this.renderPriceVolume(e.detail.id);
+      }
+    })
+  }
+
+  /*
+    * Product price volume listing
+  */
+  renderPriceVolume(variantId) {
+    let priceBreaks = this.price_breaks[variantId];
+    let priceVolume = this.querySelector('[data-priceVolume');
+    let html = ``;
+    if (priceBreaks) {
+      priceBreaks.forEach(data => {
+        html+= `<li>
+                  <span>${data.minimum_quantity}+</span>
+                  <span>${Shopify.formatMoney(data.price, window.globalVariables.money_format)}</span>
+                </li>`;
+      });
+      priceVolume.querySelector('ul').innerHTML = html;
+      priceVolume.style.display = '';
+      this.pricePerItemEle.style.display = '';
+    } else {
+      priceVolume.style.display = 'none';
+    }
+  }
+
 }
 customElements.define('product-form', ProductForm);
 
@@ -109,7 +188,6 @@ class VariantSelects extends HTMLElement {
     this.addBtn = this.form.querySelector('[name="add"]');
     this.variant_json = this.form.querySelector('[data-variantJSON]');
     this.variantPicker = this.dataset.type;
-    if(this.formType == 'product-page') window.globalVariables.product.currentVariant = this.currentVariant;
 
     if(this.formType == 'product-page') this.onVariantChange('load');
     this.addEventListener('change', this.onVariantChange.bind(this));
@@ -121,7 +199,8 @@ class VariantSelects extends HTMLElement {
    */
   onVariantChange(_event) {
     this.setCurrentVariant();
-    
+    if(this.formType == 'product-page') window.globalVariables.product.currentVariant = this.currentVariant;
+
     if (!this.currentVariant) {
       this.toggleAddButton('disable');
       // Variant name update
@@ -201,6 +280,7 @@ class VariantSelects extends HTMLElement {
       // assign variant details to this.currentVariant if all options are present
       if(!mappedValues.includes(false)){
         this.currentVariant = variant;
+        document.dispatchEvent(new CustomEvent('variant:changed',{detail: variant})); 
       }
     });
   }
@@ -227,21 +307,26 @@ class VariantSelects extends HTMLElement {
    */
   renderProductInfo(currentVariant, container) {
     if(!currentVariant || !container) return;
+
     // Price Update
+    let price_breaks = this.closest('product-form').querySelector('[data-priceBrakJson');
+    if (price_breaks) price_breaks =  JSON.parse(price_breaks.textContent);
     let price = Shopify.formatMoney(currentVariant.price, window.globalVariables.money_format);
     let compare_price = Shopify.formatMoney(currentVariant.compare_at_price, window.globalVariables.money_format);
     let priceElement = container.querySelector('[data-currentPrice]');
     let comparePriceElement = container.querySelector('[data-comparePrice]');
-
-    if(priceElement) priceElement.innerHTML = price;
-    if(comparePriceElement) {
-      comparePriceElement.innerHTML = compare_price;
-      if(currentVariant.compare_at_price <= 0){
-        comparePriceElement.style.display = 'none';
-      }else{
-        comparePriceElement.style.display = 'block';
+    if (!price_breaks){
+      if(priceElement) priceElement.innerHTML = price;
+      if(comparePriceElement) {
+        comparePriceElement.innerHTML = compare_price;
+        if(currentVariant.compare_at_price <= 0){
+          comparePriceElement.style.display = 'none';
+        }else{
+          comparePriceElement.style.display = 'block';
+        }
       }
     }
+
    
     // Grid Image Update on variant selection
     if(this.formType == 'grid'){
