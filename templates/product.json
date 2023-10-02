@@ -80,7 +80,7 @@
         "template_type": "classic-vertical",
         "fluid_layout": false,
         "show_vendor": true,
-        "enable_dynamic_checkout": false,
+        "enable_dynamic_checkout": true,
         "product_tabs_placement": "below_slider"
       }
     }
