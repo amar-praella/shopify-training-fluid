@@ -966,6 +966,140 @@
       },
       "delete_button": "मिटाना",
       "delete_button_accessibility_label": "{{address}} हटाएं"
+    },
+    "payment_method_brands": {
+      "visaelectron": "वीसा इलेक्ट्रॉन",
+      "maestro": "कलाकार",
+      "forbrugsforeningen": "Forbrugsforensingen",
+      "dankort": "Dancort",
+      "hipercard": "हिपरकार्ड",
+      "unionpay": "यूनियनपे",
+      "laser": "लेज़र",
+      "shoppay": "दुकान भुगतान",
+      "applepay": "मोटी वेतन",
+      "googlepay": "गूगल पे",
+      "paypal": "पेपैल"
+    },
+    "shop_policies": {
+      "legal_notice": "कानूनी नोटिस",
+      "privacy_policy": "गोपनीयता नीति",
+      "refund_policy": "भुगतान वापसी की नीति",
+      "shipping_policy": "नौवहन नीति",
+      "subscription_policy": "सदस्यता नीति",
+      "terms_of_sale": "बिक्री की शर्तें",
+      "terms_of_service": "सेवा की शर्तें"
+    },
+    "ui_components": {
+      "closeNotification": "बंद करना",
+      "expandNotification": "और देखें",
+      "closeModal": "बंद करना",
+      "submit": "जमा करना",
+      "processing": "प्रसंस्करण...",
+      "increase": "बढ़ाएँ {{type}}",
+      "decrease": "घटाएँ {{type}}",
+      "minimumReached": "न्यूनतम {{value}} तक पहुंच गया",
+      "maximumReached": "अधिकतम {{value}} तक पहुंच गया",
+      "january": "जनवरी",
+      "february": "फ़रवरी",
+      "march": "मार्च",
+      "april": "अप्रैल",
+      "may": "मई",
+      "june": "जून",
+      "july": "जुलाई",
+      "august": "अगस्त",
+      "september": "सितम्बर",
+      "october": "अक्टूबर",
+      "november": "नवंबर",
+      "december": "दिसंबर",
+      "monday": "सोमवार",
+      "tuesday": "मंगलवार",
+      "wednesday": "बुधवार",
+      "thursday": "गुरुवार",
+      "friday": "शुक्रवार",
+      "saturday": "शनिवार",
+      "sunday": "रविवार",
+      "mondayAbbreviation": "एमओ",
+      "tuesdayAbbreviation": "तु",
+      "wednesdayAbbreviation": "हम",
+      "thursdayAbbreviation": "वां",
+      "fridayAbbreviation": "फादर",
+      "saturdayAbbreviation": "एसए",
+      "sundayAbbreviation": "र",
+      "showNextMonth": "अगले महीने दिखाएँ, {{month}} {{year}}",
+      "showPreviousMonth": "पिछला महीना दिखाएँ, {{month}} {{year}}",
+      "rangeStart": "रेंज प्रारंभ",
+      "inRange": "सीमा में",
+      "rangeEnd": "रेंज का अंत",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} आइटम उपलब्ध है",
+        "other": "{{count}} आइटम उपलब्ध हैं"
+      },
+      "removeItem": "{{label}} हटाएं",
+      "removeTag": "टेग हटाऔ",
+      "month": {
+        "one": "महीना",
+        "other": "महीने"
+      }
+    }
+  },
+  "sections": {
+    "header": {
+      "cart_count": {
+        "one": "{{ count }} आइटम",
+        "other": "{{ count }} आइटम"
+      }
+    },
+    "cart": {
+      "cart_error": "आपके कार्ट को अपडेट करते समय एक त्रुटि हुई. कृपया पुन: प्रयास करें।",
+      "cart_quantity_error_html": "आप इस आइटम की केवल [मात्रा] अपनी कार्ट में जोड़ सकते हैं।"
+    },
+    "footer": {
+      "copyright": "कॉपीराइट पाठ",
+      "all_rights_reserved": "सर्वाधिकार सुरक्षित।"
+    },
+    "video-with-text": {
+      "play_video": "वीडियो चलाएं",
+      "paused_video": "रोका गया वीडियो",
+      "close_video": "वीडियो बंद करें"
+    },
+    "collection_template": {
+      "clear": "स्पष्ट",
+      "clear_all": "सभी साफ करें",
+      "filter_by_label": "फिल्टर के द्वारा",
+      "filter_button": "फ़िल्टर",
+      "sort_button": "क्रम से लगाना",
+      "sort_by_label": "इसके अनुसार क्रमबद्ध करें",
+      "title": "संग्रह"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "पासवर्ड का उपयोग करके स्टोर में प्रवेश करें:",
+      "login_password_button": "पासवर्ड का उपयोग करके दर्ज करें",
+      "login_form_password_label": "पासवर्ड",
+      "login_form_password_placeholder": "आपका पासवर्ड",
+      "login_form_error": "गलत पासवर्ड!",
+      "login_form_submit": "प्रवेश करना",
+      "modal": "पासवर्ड मोडल",
+      "signup_form_success": "खोलने से ठीक पहले हम आपको एक ईमेल भेजेंगे!",
+      "admin_link_html": "क्या आप स्टोर के मालिक हैं? <a href=\"\/admin\" class=\"link underlined-link\">यहां लॉगिन करें<\/a>",
+      "powered_by_shopify_html": "यह दुकान {{ shopify }} द्वारा संचालित होगी"
+    },
+    "social": {
+      "newsletter_form": {
+        "newsletter_email": "अपना ईमेल दर्ज करें",
+        "newsletter_confirmation": "सब्सक्राइब करने के लिए धन्यवाद",
+        "button": "जमा करना"
+      },
+      "alt_text": {
+        "share_on_facebook": "फेसबुक पर सांझा करें",
+        "share_on_twitter": "ट्विटर पर ट्वीट करें",
+        "share_on_pinterest": "Pinterest पर पिन करें"
+      },
+      "links": {
+        "twitter": "ट्विटर",
+        "facebook": "फेसबुक"
+      }
     }
   }
 }
