@@ -1,0 +1,9 @@
+{
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "title": "test hai ye"
+      }
+    }
+  }
+}
