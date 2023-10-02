@@ -4,5 +4,35 @@
     "market": "mexico"
   },
   "sections": {
-  }
+    "16270344513581fee7": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+        "21b79b13-165a-4ae3-9277-e3091171e49d": {
+          "settings": {
+            "title": "Heading for Mexico Store",
+            "image": "shopify:\/\/shop_images\/man-adjusts-blue-tuxedo-bowtie_925x_12721b18-5227-4d28-aa65-e2d7541308b6.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/urban-fashion_925x_4ace9d8c-8074-4024-93e4-6f585210259b.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "21b79b13-165a-4ae3-9277-e3091171e49d"
+      ]
+    },
+    "16270454495feb2a63": {
+      "settings": {
+        "fluid_layout": true,
+        "image": "shopify:\/\/shop_images\/young-female-models-denim_925x_6a3b6b8e-10a5-4274-8abd-8e1c441cbb92.jpg"
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "16270344513581fee7",
+    "16270454495feb2a63",
+    "162943776301163939"
+  ]
 }
