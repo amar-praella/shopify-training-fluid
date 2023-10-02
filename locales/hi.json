@@ -239,5 +239,143 @@
         }
       }
     }
+  },
+  "templates": {
+    "cart": {
+      "quantity": {
+        "increase": "{{ product }} के लिए मात्रा बढ़ाएँ",
+        "decrease": "{{ product }} के लिए मात्रा कम करें"
+      },
+      "headings": {
+        "product": "उत्पाद",
+        "price": "कीमत",
+        "total": "कुल",
+        "quantity": "मात्रा"
+      },
+      "empty": "आपकी गाड़ी खाली है",
+      "back_to_shop": "सभी खरीदारी करें",
+      "upsell_add_btn": "जोड़ना",
+      "View_Shopping_cart": "की हुई खरीददारी देखो",
+      "checkout": "चेक आउट",
+      "remove": "निकालना",
+      "total": "कुल",
+      "free": "मुक्त",
+      "shipping_at_checkout": "चेकआउट पर शिपिंग",
+      "note": "टिप्पणी",
+      "note_placeholder": "कार्ट नोट जोड़ें"
+    },
+    "contact": {
+      "form": {
+        "title": "हमें संदेश भेजें",
+        "first_name": "पहला नाम *",
+        "last_name": "उपनाम",
+        "email": "मेल पता",
+        "phone": "फ़ोन नंबर",
+        "subject": "विषय",
+        "comment": "संदेश",
+        "send": "जमा करना",
+        "post_success": "हमसे संपर्क करने के लिए धन्यवाद। हम यथाशीघ्र आपसे संपर्क करेंगे।",
+        "error_heading": "कृपया निम्नलिखित को समायोजित करें:"
+      }
+    },
+    "404": {
+      "title": "पृष्ठ नहीं मिला"
+    },
+    "blogs": {
+      "article": {
+        "author_on_date_html": "{{ author }} द्वारा {{ date }} को पोस्ट किया गया",
+        "read_more": "और पढ़ें"
+      },
+      "comments": {
+        "heading": "टिप्पणियाँ",
+        "title": "एक टिप्पणी छोड़ें",
+        "name": "नाम",
+        "email": "ईमेल",
+        "website": "वेबसाइट",
+        "message": "संदेश",
+        "post": "तेज़ी से टिप्पणी करना",
+        "moderated": "कृपया ध्यान दें, टिप्पणियाँ प्रकाशित होने से पहले अनुमोदित होनी चाहिए।",
+        "success_moderated": "आपकी टिप्पणी सफलतापूर्वक पोस्ट कर दी गई. हम इसे थोड़ी देर में प्रकाशित करेंगे, क्योंकि हमारा ब्लॉग संचालित है।",
+        "success": "आपकी टिप्पणी सफलतापूर्वक पोस्ट कर दी गई! धन्यवाद!",
+        "with_count": {
+          "one": "{{ count }} टिप्पणी",
+          "other": "{{ count }} टिप्पणियाँ"
+        }
+      },
+      "modern_navigation": {
+        "next": "अगला"
+      },
+      "general": {
+        "share": "पर साझा करें:",
+        "categories": "श्रेणियाँ"
+      }
+    }
+  },
+  "customer": {
+    "account": {
+      "first_name_pretext": "नमस्ते",
+      "title": "खाता",
+      "details": "खाता विवरण",
+      "password_label": "पासवर्ड",
+      "reset_label": "रीसेट",
+      "total_orders": "कुल ऑर्डर",
+      "view_addresses": "पते देखें",
+      "return": "खाता विवरण पर लौटें"
+    },
+    "account_fallback": "खाता",
+    "activate_account": {
+      "title": "खाते को सक्रिय करें",
+      "subtext": "अपना खाता सक्रिय करने के लिए अपना पासवर्ड बनाएं.",
+      "password": "पासवर्ड",
+      "password_confirm": "पासवर्ड की पुष्टि कीजिये",
+      "submit": "खाते को सक्रिय करें",
+      "cancel": "आमंत्रण अस्वीकार करें"
+    },
+    "addresses": {
+      "title": "पतों",
+      "default": "गलती करना",
+      "add_new": "एक नया पता लिखो",
+      "edit_address": "पता संपादित करें",
+      "first_name": "पहला नाम",
+      "last_name": "उपनाम",
+      "company": "कंपनी",
+      "address1": "पता 1",
+      "address2": "पता द्वितीय",
+      "city": "शहर",
+      "country": "देश\/क्षेत्र",
+      "province": "प्रांत",
+      "zip": "डाक का \/ ज़िप कोड",
+      "phone": "फ़ोन",
+      "set_default": "डिफ़ॉल्ट पते के रूप में सेट करें",
+      "add": "पता जोड़ें",
+      "update": "पता अद्यतन करें",
+      "cancel": "रद्द करना",
+      "edit": "संपादन करना",
+      "delete": "मिटाना",
+      "delete_confirm": "क्या आप वाकई यह पता हटाना चाहते हैं?"
+    },
+    "log_in": "लॉग इन करें",
+    "log_out": "लॉग आउट",
+    "login_page": {
+      "cancel": "रद्द करना",
+      "create_account": "खाता बनाएं",
+      "email": "ईमेल",
+      "forgot_password": "अपना कूट शब्द भूल गए?",
+      "guest_continue": "जारी रखना",
+      "guest_title": "अतिथि के रूप में जारी रखें",
+      "password": "पासवर्ड",
+      "title": "लॉग इन करें",
+      "sign_in": "दाखिल करना",
+      "submit": "जमा करना"
+    },
+    "order": {
+      "title": "आदेश {{ name }}",
+      "date_html": "{{ date }} को रखा गया",
+      "cancelled_html": "ऑर्डर {{ date }} को रद्द कर दिया गया",
+      "cancelled_reason": "कारण: {{ reason }}",
+      "billing_address": "बिल भेजने का पता",
+      "payment_status": "भुगतान की स्थिति",
+      "shipping_address": "शिपिंग पता"
+    }
   }
 }
