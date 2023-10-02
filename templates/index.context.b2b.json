@@ -11,28 +11,27 @@
       "blocks": {
         "e5811002-6f6b-488d-a9a4-803d62a8f03e": {
           "settings": {
-            "caption": "Welcome to B2B Store",
-            "image": "shopify:\/\/shop_images\/smiling-woman-poses_925x_d392b94b-a09b-4b4f-a500-4089564a14a9.jpg"
+            "image": "shopify:\/\/shop_images\/smiling-woman-poses_925x_d392b94b-a09b-4b4f-a500-4089564a14a9.jpg",
+            "caption": "Welcome to B2B Store"
           }
         }
       },
       "block_order": [
         "e5811002-6f6b-488d-a9a4-803d62a8f03e"
       ]
+    },
+    "16270454495feb2a63": {
+      "settings": {
+        "fluid_layout": true,
+        "image": "shopify:\/\/shop_images\/pexels-anna-shvets-5760878.jpg"
+      },
+      "blocks": {
+      }
     }
   },
   "order": [
     "16270344513581fee7",
-    "2b865f5c-7e70-4f62-8620-e3471df1555f",
-    "16270420142c0cafe8",
-    "162710985888a5f3c0",
-    "16273012625e8a6f4e",
-    "162703446299aaa8de",
     "16271097114d5db4ef",
-    "16270454495feb2a63",
-    "1633694875e64c966c",
-    "162943776301163939",
-    "1627036040e9086143",
-    "163403325190e9c2fd"
+    "16270454495feb2a63"
   ]
 }
