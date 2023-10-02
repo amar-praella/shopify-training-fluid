@@ -237,7 +237,285 @@
           "one": "{{count}} आइटम",
           "other": "{{count}} आइटम"
         }
+      },
+      "thank_you": {
+        "payment_information_title": "भुगतान जानकारी",
+        "shipping_information_title": "शिपिंग सूचना",
+        "page_title": "धन्यवाद, %{display_name}!",
+        "page_title_no_name": "धन्यवाद!",
+        "purchase_order_number_title": "पीओ नंबर #%{purchase_order_number}",
+        "cancelled_page_title": "आदेश रद्द कर दिया गया",
+        "customer_information_title": "ऑर्डर का विवरण",
+        "contact_information_title": "संपर्क जानकारी",
+        "billing_address_title": "बिल भेजने का पता",
+        "company_location_title": "जगह",
+        "shipping_address_title": "शिपिंग पता",
+        "shipping_address_map_title": "Google मानचित्र शिपिंग पते का पिन बिंदु प्रदर्शित कर रहा है: %{पता}",
+        "payment_method_title": "भुगतान विधि",
+        "shipping_method_title": "शिपिंग का तरीका",
+        "tracking_number": "ट्रैकिंग नंबर:",
+        "company_tracking_number": "%{कंपनी} ट्रैकिंग नंबर:",
+        "estimated_arrival": "अनुमानित प्रसव तिथि: ",
+        "estimated_delivery": "वर्तमान डिलीवरी अनुमान: ",
+        "re-order": "उन्हीं वस्तुओं को पुनः क्रमित करें",
+        "confirmed": "की पुष्टि",
+        "gift_card_confirmation_by_text": "यदि आपको यह प्राप्त नहीं हुआ है, तो पाठ पुनः भेजें या हमसे संपर्क करें।",
+        "gift_card_confirmation_by_email": "यदि आपको यह प्राप्त नहीं हुआ है, तो ईमेल पुनः भेजें या हमसे संपर्क करें।",
+        "gift_card_title": "उपहार कार्ड",
+        "resend_gift_cards": "उपहार कार्ड पुनः भेजें",
+        "thank_you_title": "आपका ऑर्डर कन्फ़र्म हो गया है",
+        "thank_you_title_payment": "आपके भुगतान की पुष्टि हो गई है",
+        "thank_you_title_review": "आपका आदेश समीक्षा के लिए प्रस्तुत कर दिया गया है",
+        "thank_you_confirmed_order_with_email": "आपको शीघ्र ही अपने ऑर्डर नंबर के साथ एक पुष्टिकरण ईमेल प्राप्त होगा।",
+        "thank_you_confirmed_order_with_phone": "आपको शीघ्र ही अपने ऑर्डर नंबर के साथ एक पुष्टिकरण पाठ प्राप्त होगा।",
+        "thank_you_confirmed_order_with_email_and_phone": "आपको शीघ्र ही अपने ऑर्डर नंबर के साथ एक पुष्टिकरण ईमेल प्राप्त होगा।",
+        "thank_you_confirmed_order_with_email_payment": "आपने अपने ऑर्डर %{दिनांक} पर भुगतान कर दिया है.",
+        "thank_you_confirmed_order_with_phone_payment": "आपने अपने ऑर्डर %{दिनांक} पर भुगतान कर दिया है.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "आपने अपने ऑर्डर %{दिनांक} पर भुगतान कर दिया है.",
+        "thank_you_confirmed_order_with_email_pick_up": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक ईमेल प्राप्त होगा।",
+        "thank_you_confirmed_order_with_phone_pick_up": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक टेक्स्ट प्राप्त होगा।",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक ईमेल प्राप्त होगा।",
+        "thank_you_confirmed_order_with_missing": "ऑर्डर पुष्टिकरण प्राप्त करने के लिए ईमेल या फ़ोन द्वारा हमसे संपर्क करें।",
+        "thank_you_confirmed_order_with_draft": "यदि हमें अधिक जानकारी की आवश्यकता होगी या आपके ऑर्डर की पुष्टि हो जाएगी तो हम आपको बताएंगे।",
+        "order_status_confirmed_order_with_email": "आपका ऑर्डर तैयार होने पर आपको एक ईमेल प्राप्त होगा।",
+        "order_status_confirmed_order_with_phone": "आपका ऑर्डर तैयार होने पर आपको एक टेक्स्ट प्राप्त हो सकता है।",
+        "order_status_confirmed_order_with_email_and_phone": "आपका ऑर्डर तैयार होने पर आपको एक ईमेल प्राप्त होगा।",
+        "order_status_confirmed_order_with_email_payment": "आपने अपने ऑर्डर %{दिनांक} पर भुगतान कर दिया है.",
+        "order_status_confirmed_order_with_phone_payment": "आपने अपने ऑर्डर %{दिनांक} पर भुगतान कर दिया है.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "आपने अपने ऑर्डर %{दिनांक} पर भुगतान कर दिया है.",
+        "order_status_confirmed_order_with_email_pick_up": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक ईमेल प्राप्त होगा।",
+        "order_status_confirmed_order_with_phone_pick_up": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक टेक्स्ट प्राप्त होगा।",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "जब आपका ऑर्डर पिकअप के लिए तैयार होगा तो आपको एक ईमेल और टेक्स्ट प्राप्त होगा।",
+        "order_status_confirmed_order_local": "हम आपका ऑर्डर डिलीवरी के लिए तैयार कर रहे हैं।",
+        "order_status_updates_with_email": "आपको ईमेल द्वारा शिपिंग और डिलीवरी अपडेट प्राप्त होंगे।",
+        "order_status_updates_with_phone": "आपको टेक्स्ट द्वारा शिपिंग और डिलीवरी अपडेट प्राप्त हो सकते हैं।",
+        "order_status_updates_with_email_and_phone": "आपको ईमेल द्वारा शिपिंग और डिलीवरी अपडेट प्राप्त होंगे।",
+        "order_status_updates_with_missing": "चुनें कि आप शिपिंग अपडेट कैसे प्राप्त करना चाहते हैं।",
+        "order_status_confirmed_with_installments_payment_return": "कृपया अपना ध्यान विक्रय सहयोगी की ओर लौटाएँ।",
+        "order_status_confirmed_with_installments_payment_confirm": "आपको शीघ्र ही अपने ऑर्डर नंबर और अपनी किस्त अनुसूची के विवरण के साथ एक पुष्टिकरण ईमेल प्राप्त होगा।",
+        "confirmed_title": "आपका ऑर्डर कन्फ़र्म हो गया है",
+        "confirmed_description": "हमने आपका आदेश स्वीकार कर लिया है और हम इसे तैयार कर रहे हैं। अपनी शिपमेंट स्थिति पर अपडेट के लिए इस पेज पर वापस आएं।",
+        "ready_for_pickup_title": "आपका ऑर्डर पिकअप के लिए तैयार है",
+        "ready_for_pickup_description": "आपका ऑर्डर पिकअप के लिए तैयार है. जब आप अपना ऑर्डर उठाएं तो कृपया अपने ऑर्डर की पुष्टिकरण साथ लाएं।",
+        "ready_for_delivery_title": "आपका ऑर्डर डिलीवरी के लिए तैयार है",
+        "ready_for_delivery_description": "हमने आपका ऑर्डर तैयार कर लिया है.",
+        "order_updates_title": "ऑर्डर अपडेट",
+        "shop_phone_description": "आपको अपना ऑर्डर ट्रैक करने में सहायता के लिए शॉप ऐप के लिंक के साथ एक टेक्स्ट प्राप्त होगा।",
+        "order_updates_description_html": "अपडेट %{customer_contact} को भेजे जाएंगे",
+        "order_updates_current_step_prefix": "वर्तमान चरण: ",
+        "order_updates_past_step_prefix": "पिछला चरण: ",
+        "order_updates_upcoming_step_prefix": "आगामी चरण: ",
+        "in_transit": "अपने रास्ते पर",
+        "in_transit_title": "आपका आदेश मार्ग में है",
+        "in_transit_description": "आपको इसकी प्रगति पर अपडेट प्राप्त होंगे।",
+        "in_transit_description_days": "आपको अपना ऑर्डर अगले %{number} दिनों में प्राप्त हो जाना चाहिए.",
+        "in_transit_description_today": "आपको अपना ऑर्डर आज ही प्राप्त हो जाना चाहिए.",
+        "in_transit_description_tomorrow": "आपको अपना ऑर्डर अगले दिन प्राप्त हो जाना चाहिए.",
+        "no_tracking_number": "इस ऑर्डर के लिए कोई ट्रैकिंग नंबर नहीं है.",
+        "out_for_delivery": "डिलीवरी के लिए निकले हैं",
+        "out_for_delivery_title": "आपका ऑर्डर डिलीवरी के लिए निकल चुका है",
+        "out_for_delivery_description_html": "आपका ऑर्डर रास्ते में है और आज ही पहुंच जाना चाहिए। यदि यह अगले 2 दिनों में वितरित नहीं होता है, तो %{contact_us}।",
+        "out_for_delivery_local_title": "आपका ऑर्डर डिलीवरी के लिए निकल चुका है",
+        "out_for_delivery_local_description_html": "आपका ऑर्डर जल्द ही आ जाएगा.",
+        "attempted_delivery": "वितरण प्रयास किया गया",
+        "attempted_delivery_title": "आपका ऑर्डर डिलीवर करने का प्रयास किया गया",
+        "attempted_delivery_description_html": "आपका ऑर्डर डिलीवर करने का प्रयास किया गया लेकिन वह असफल रहा। %{contact_us} एक और डिलीवरी प्रयास की व्यवस्था करने के लिए।",
+        "attempted_delivery_local_title": "छूटी हुई डिलीवरी",
+        "attempted_delivery_local_description_html": "हम आपका ऑर्डर डिलीवर करने में सक्षम नहीं थे. दूसरी डिलीवरी शेड्यूल करने के लिए, %{contact_us}.",
+        "delivered": "पहुंचा दिया",
+        "delivered_title": "आपका ऑर्डर डिलीवर कर दिया गया है",
+        "delivered_description_html": "आपका ऑर्डर आपके द्वारा दिए गए पते पर पहुंचा दिया गया है। यदि आपको यह प्राप्त नहीं हुआ है, या यदि आपको कोई अन्य समस्या है, तो %{contact_us}।",
+        "delivered_local_title": "आपका ऑर्डर डिलीवर कर दिया गया है",
+        "delivered_local_description_html": "आपका ऑर्डर नहीं मिला? %{हमें बताइए}।",
+        "payment_method_draft_order": "आदेश की समीक्षा के बाद देय होगा",
+        "choose_payment_method_later": "बाद में भुगतान विधि चुनें",
+        "picked_up_title": "आपका ऑर्डर उठा लिया गया है",
+        "picked_up_description_html": "आपका ऑर्डर %{date} को %{location_name} पर उठाया गया था।",
+        "contact_us": "संपर्क करें",
+        "contact_us_lowercase": "संपर्क करें",
+        "contact_us_html": "मदद की ज़रूरत है? %{संपर्क करें}",
+        "updated_time": "%{time_ago} पहले अपडेट किया गया",
+        "failure": "वितरित नही हुआ",
+        "failed_title": "आपका ऑर्डर डिलीवर नहीं किया जा सका",
+        "failed_contact_merchant": "डिलीवरी की व्यवस्था करने के लिए %{कंपनी} से संपर्क करें।",
+        "failed_contact_merchant_no_company": "डिलीवरी की व्यवस्था करने के लिए हमसे संपर्क करें।"
       }
+    }
+  },
+  "customer_accounts": {
+    "B2B": {
+      "orders": {
+        "draft_order_list": {
+          "show_all_accessibility_label": "समीक्षा में सभी ऑर्डर दिखाएं",
+          "show_all_orders_in_review": "समीक्षा में सभी ऑर्डर दिखाएं",
+          "show_less_orders_in_review": "समीक्षा में कम ऑर्डर दिखाएं",
+          "title": "लंबित",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "आपके पास कोई लंबित आदेश नहीं है",
+            "pending_orders": {
+              "one": "आपके पास {{count}} लंबित आदेश है",
+              "other": "आपके पास {{count}} लंबित आदेश हैं"
+            },
+            "more_than_pagination_length": "आपके पास {{count}} से अधिक लंबित ऑर्डर हैं"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "समीक्षा नेविगेशन बटन में आदेश"
+          }
+        },
+        "order_list_column_headers_location": "जगह",
+        "order_list_column_headers_contact": "संपर्क",
+        "removed_company_contact_tooltip": "कंपनी से निकाल दिया गया"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "ऑर्डर {{draftOrderName {{date}} {{draftOrderName}}",
+        "loading": "ऑर्डर विवरण लोड हो रहा है",
+        "loading_finished_accessibility_message": "ऑर्डर विवरण लोड कर दिया गया है",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "आपका भुगतान {{count}} दिन का अतिदेय है",
+              "other": "आपका भुगतान {{count}} दिनों का अतिदेय है"
+            },
+            "banner_due": {
+              "one": "आपका भुगतान {{count}} दिन में देय होगा",
+              "other": "आपका भुगतान {{count}} दिनों में देय होगा"
+            },
+            "banner_due_today": "आपका भुगतान आज देय है",
+            "title": "भुगतान राशि",
+            "title_with_date": "भुगतान देय {{date}}",
+            "title_due_on_receipt": "भुगतान अभी तक देय नहीं है",
+            "title_due_on_fulfillment": "पूर्ति पर भुगतान देय",
+            "description_overdue": "आपका भुगतान देर से हुआ है.",
+            "description_partially_paid": "इस आदेश का आंशिक भुगतान किया गया था. आपके पास शेष राशि है.",
+            "description_authorized": "आपकी भुगतान विधि से नियत तिथि पर शुल्क लिया जाएगा, या आप अभी भुगतान कर सकते हैं।",
+            "description_due_on_receipt": "भुगतान देय होने पर आपको एक चालान प्राप्त होगा।",
+            "description_due_on_fulfillment": "इस ऑर्डर के सभी आइटम पूरे हो जाने पर भुगतान देय होगा।"
+          },
+          "draft": {
+            "description": "ऑर्डर की पुष्टि होने पर भुगतान विवरण तय किया जाता है।",
+            "title": "भुगतान अभी तक देय नहीं है",
+            "in_review": {
+              "description": "ऑर्डर की पुष्टि होने पर भुगतान विवरण तय किया जाता है।",
+              "title": "भुगतान अभी तक देय नहीं है"
+            },
+            "submitted": {
+              "description": "इस आदेश की पुष्टि के लिए भुगतान सबमिट करें.",
+              "title": "पुष्टि करने के लिए भुगतान करें"
+            }
+          },
+          "paid": {
+            "title": "चुकाया गया",
+            "title_with_date": "भुगतान किया गया {{date}}",
+            "description": "आपका ऑर्डर पूर्णतः भुगतान योग्य है."
+          },
+          "refund": {
+            "title": "वापसी की गई है",
+            "title_with_date": "{{date}} वापस कर दिया गया",
+            "description_full_refund": "आपको इस ऑर्डर के लिए पूर्ण धन-वापसी प्राप्त हुई.",
+            "description_single_refund": "आपको इस आदेश के लिए आंशिक धन-वापसी प्राप्त हुई।",
+            "description_multiple_refunds": "आपको इस आदेश के लिए आंशिक धन-वापसी प्राप्त हुई।"
+          },
+          "canceled": {
+            "title": "भुगतान रद्द कर दिया गया",
+            "description": "आपसे शुल्क नहीं लिया गया."
+          },
+          "pay_now": "अब भुगतान करें",
+          "pay_now_accessibility_label": "ऑर्डर के लिए अभी भुगतान करें {{orderName}}",
+          "title": "भुगतान की स्थिति"
+        },
+        "order_timeline": {
+          "expand_events_label": "प्रदर्शन का विवरण",
+          "expand_events_accessibility_label": "ड्राफ्ट ऑर्डर विवरण दिखाएँ",
+          "hide_events_label": "विवरण छुपाओ",
+          "hide_events_accessibility_label": "ड्राफ्ट ऑर्डर विवरण छुपाएं"
+        },
+        "subtitle": "सबमिट किया गया {{date}}",
+        "title": "आदेश {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "यह भुगतान विधि अब इस स्थान से भविष्य की खरीदारी के लिए उपलब्ध नहीं होगी।",
+          "description_with_replacement": "इस भुगतान विधि को हटाने से इस स्थान के लिए पूर्व-अधिकृत भुगतान प्रभावित होंगे। आगामी ऑर्डर प्राप्त करना जारी रखने के लिए इसे वैकल्पिक भुगतान विधि से बदलें।"
+        },
+        "payment_details": {
+          "order_label": "आदेश {{name}}",
+          "draft_label": "ड्राफ्ट ऑर्डर {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "पीओ नंबर जोड़ें",
+        "add_modal_title": "पीओ नंबर जोड़ें",
+        "cancel": "रद्द करना",
+        "close_modal_accessibility_label": "पीओ नंबर मोडल बंद करें",
+        "discard": "खारिज करना",
+        "discard_changes_modal_title": "परिवर्तनों को निरस्त करें?",
+        "edit_accessibility_label": "पीओ नंबर संपादित करें",
+        "edit_modal_title": "पीओ नंबर संपादित करें",
+        "empty_state": "कोई पीओ नंबर नहीं",
+        "modal_po_number_input_label": "पीओ नंबर",
+        "modal_po_number_input_max_length_error": "PO संख्याओं में अधिकतम {{maxLength}} वर्ण होते हैं।",
+        "save": "बचाना",
+        "title": "पीओ # {{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "इस पते को हटाने में एक समस्या थी. पुनः प्रयास करें या पृष्ठ को ताज़ा करें।"
+      },
+      "addresses_loading_issue": {
+        "description": "संपर्क त्रुटि। अपना इंटरनेट कनेक्शन जांचें और पुनः प्रयास करें।"
+      },
+      "banner_title": {
+        "one": "{{count}} त्रुटि है",
+        "other": "{{count}} त्रुटियां हैं"
+      },
+      "failed_address_creation": {
+        "description": "आपका पता बनाने में एक समस्या हुई. इस पृष्ठ को ताज़ा करने का प्रयास करें या अपना इंटरनेट कनेक्शन जांचें।"
+      },
+      "failed_address_update": {
+        "description": "आपका पता अपडेट करने में समस्या हुई. इस पृष्ठ को ताज़ा करने का प्रयास करें या अपना इंटरनेट कनेक्शन जांचें।"
+      },
+      "load_orders_error": {
+        "title": "ऑर्डर लोड करने में असमर्थ",
+        "description": "पुनः प्रयास करें या बाद में वापस आएँ।",
+        "retry_button": "पुन: प्रयास करें"
+      },
+      "load_paypal_error": {
+        "description": "PayPal लोड करने में समस्या आ रही है. कृपया पुन: प्रयास करें।"
+      },
+      "no_access": {
+        "back_to_authentication_link": "किसी भिन्न खाते में लॉग इन करें",
+        "description": "आप {{shopName}} के साथ B2B ग्राहक के रूप में पंजीकृत नहीं हैं",
+        "title": "तक पहुँच नहीं"
+      },
+      "no_access_to_locations": {
+        "description": "आपके पास किसी भी स्थान तक पहुंच नहीं है"
+      },
+      "not_found": {
+        "description": "यूआरएल जांचें या कुछ मिनटों में पुनः प्रयास करें।",
+        "title": "इस पेज को लोड करने में समस्या आ रही है"
+      },
+      "order_not_found": {
+        "description": "यह आदेश मौजूद नहीं है या आपके पास इसे देखने की अनुमति नहीं है.",
+        "title": "ऑर्डर नहीं मिला"
+      },
+      "profile_update_error": {
+        "description": "आपकी प्रोफ़ाइल अपडेट करने में समस्या हुई. इस पृष्ठ को ताज़ा करने का प्रयास करें या अपना इंटरनेट कनेक्शन जांचें।"
+      },
+      "retry_action_label": "पुन: प्रयास करें",
+      "load_extension_error": {
+        "title": "गलती",
+        "description": "इस पृष्ठ को ताज़ा करें या कुछ मिनटों में पुनः प्रयास करें।",
+        "refresh_button": "पृष्ठ ताज़ा करें"
+      }
+    },
+    "payment_methods": {
+      "title": "भुगतान की विधि",
+      "add_payment_method_button": "भुगतान विधि जोड़ें",
+      "add_payment_method_banner": "तेज़ चेकआउट या पूर्व-अधिकृत सेवाओं के लिए भुगतान विधि जोड़ें",
+      "no_payment_methods_banner": "कोई भुगतान विधि नहीं जोड़ी गई",
+      "edit_payment_method_button_accessibility_label": "{{paymentMethodName}} को संपादित करें जिसका अंत {{lastDigits}} पर हो"
     }
   }
 }
