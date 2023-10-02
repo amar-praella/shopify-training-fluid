@@ -1627,7 +1627,32 @@
         "title_accessibility_label": "डिफ़ॉल्ट पता: {{address}}"
       },
       "delete_button": "मिटाना",
-      "delete_button_accessibility_label": "{{address}} हटाएं"
+      "delete_button_accessibility_label": "{{address}} हटाएं",
+      "delete_confirmation_button": "पता हटाएँ",
+      "delete_confirmation_button_accessibility_label": "{{address}} हटाएं",
+      "delete_confirmation_message": "पता हटाएं? मौजूदा आदेश प्रभावित नहीं होंगे.",
+      "delete_confirmation_title": "पता हटाएं?",
+      "delete_confirmation_description": "मौजूदा आदेश प्रभावित नहीं होंगे.",
+      "edit_button": "संपादन करना",
+      "edit_button_accessibility_label": "{{address}} संपादित करें",
+      "edit_section_accessibility_label": "{{address}} संपादित करें",
+      "edit_modal_title": {
+        "default": "पता संपादित करें",
+        "billing": "बिलिंग पता संपादित करें",
+        "shipping": "शिपिंग पता संपादित करें"
+      },
+      "loading_accessibility_message": "पता लोड हो रहा है",
+      "loading_addresses_accessibility_message": "पते लोड हो रहे हैं",
+      "loading_billing_accessibility_message": "बिलिंग पता लोड हो रहा है",
+      "loading_finished_accessibility_message": "पतों का नया पेज लोड हो गया है",
+      "loading_shipping_accessibility_message": "शिपिंग पता लोड हो रहा है",
+      "pagination": {
+        "load_more": "और लोड करें",
+        "load_more_accessibility_label": "अधिक पते लोड करें"
+      },
+      "save_new_address_accessibility_label": "पता सहेजें",
+      "title": "पतों",
+      "billing_address_dropdown_placeholder": "बिल भेजने का पता"
     },
     "payment_method_brands": {
       "visaelectron": "वीसा इलेक्ट्रॉन",
@@ -1814,6 +1839,103 @@
       },
       "let_us_know": "हमें बताइए",
       "contact_us": "संपर्क करें।"
+    },
+    "address_form": {
+      "attention": "ध्यान",
+      "attention_help_text": "किसी व्यक्ति या विभाग का नाम",
+      "auto_complete_close_accessibility_label": "सुझाव बंद करें",
+      "auto_complete_title": "सुझाव",
+      "billing_address": "बिलिंग पते के रूप में उपयोग करें",
+      "cancel": "रद्द करना",
+      "cancel_accessibility_label": "संपादन पता रद्द करें {{address}}",
+      "creation_success_notification": "पता जोड़ा गया",
+      "default_address": "यह मेरा डिफ़ॉल्ट पता है",
+      "default_address_creation_success_notification": "डिफ़ॉल्ट पता जोड़ा गया",
+      "default_address_update_success_notification": "डिफ़ॉल्ट पता अपडेट किया गया",
+      "loading_add_form_accessibility_message": "नया पता प्रपत्र लोड हो रहा है",
+      "loading_edit_form_accessibility_message": "संपादन पता फ़ॉर्म लोड हो रहा है",
+      "loading_form_accessibility_message": "पता प्रपत्र लोड हो रहा है",
+      "loading_finished_accessibility_message": "पता प्रपत्र लोड हो गया है",
+      "save": "बचाना",
+      "save_accessibility_label": "पता सहेजें {{address}}",
+      "section_title_accessibility_label": "पता जोड़ें",
+      "update_success_notification": "पता अपडेट किया गया"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "कंपनी का नाम",
+        "company_card_section_accessibility_label": "कंपनी"
+      },
+      "locations": {
+        "contact_email": "ईमेल",
+        "contact_list_title": "लोग",
+        "contact_name": "नाम",
+        "contact_permissions": "अनुमतियां",
+        "contact_phone_number": "फ़ोन नंबर",
+        "location_picker_label": "स्थान का नाम",
+        "location_picker_accessibility_label": "स्थान का नाम: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : भुगतान {{numberOfDays}} दिनों के भीतर देय",
+        "own_role_contact_name": "आप",
+        "pagination": {
+          "load_more": "और लोड करें",
+          "load_more_accessibility_label": "अधिक स्थान लोड करें"
+        },
+        "payment_details_title": "भुगतान विवरण",
+        "payment_terms": "भुगतान की शर्तें",
+        "permissions_label": "आपकी अनुमतियाँ",
+        "permissions_title": "अनुमतियां",
+        "section_title": "जगह",
+        "shipping_address_required": "ऑर्डर देना शुरू करने के लिए इस स्थान पर एक शिपिंग पता जोड़ें।",
+        "staff_and_permissions_title": "कर्मचारी और अनुमतियाँ",
+        "tax_details_title": "कर विवरण",
+        "tax_id": "टैक्स आईडी",
+        "tax_exemptions": "कर छूट",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} और अधिक",
+        "multiple_tax_exemptions_and": "और",
+        "tax_exemptions_modal_close": "बंद करना",
+        "taxes_none": "कोई नहीं",
+        "tax_exemption_not_applicable": "एन\/ए",
+        "tax_exemptions_modal_button_accessibility_label": "सभी कर छूट देखें"
+      },
+      "location_selection": {
+        "continue_to_store": "संग्रह करना जारी रखें",
+        "description": "यदि आपके कार्ट में पहले से ही आइटम हैं, तो स्थान बदलने से कार्ट की कीमतें और मात्रा प्रभावित हो सकती हैं।",
+        "list_accessibility_label": "स्थानों की सूची",
+        "list_item_without_address_accessibility_label": "{{name}} : कोई पता नहीं",
+        "list_loading_accessibility_message": "स्थानों की सूची लोड हो रही है",
+        "list_loading_address_accessibility_message": "{{locationName}} के लिए पता लोड हो रहा है",
+        "list_loading_finished_accessibility_message": "स्थानों की सूची लोड हो गई है",
+        "loading_store_accessibility_message": "स्टोर पर जा रहे हैं",
+        "no_location_title": "केवल व्यक्तिगत आदेश",
+        "no_location_description": "अब आपको {{company}} के लिए ऑर्डर देने की अनुमति नहीं है। आप अभी भी व्यक्तिगत ऑर्डर दे सकते हैं.",
+        "no_locations_found": "कोई स्थान नहीं मिला",
+        "search": "कोई स्थान खोजें",
+        "search_location_title": "एक स्थान चुनें",
+        "selection_cancel_button": "रद्द करना",
+        "selection_confirmation_button": "स्थान का चयन",
+        "title": "आप किस स्थान के लिए खरीदारी कर रहे हैं?",
+        "clear_search": "स्पष्ट खोज",
+        "try_new_search": "नई खोज का प्रयास करें"
+      },
+      "addresses": {
+        "add_billing_address_button": "बिलिंग पता जोड़ें",
+        "add_billing_address_section_accessibility_label": "बिलिंग पता जोड़ें",
+        "add_shipping_address_button": "शिपिंग पता जोड़ें",
+        "add_shipping_address_section_accessibility_label": "शिपिंग पता जोड़ें",
+        "billing_address_card_title": "बिल भेजने का पता",
+        "cancel_adding_billing_address_accessibility_label": "बिलिंग पता जोड़ना रद्द करें",
+        "cancel_adding_shipping_address_accessibility_label": "शिपिंग पता जोड़ना रद्द करें",
+        "save_new_billing_address_accessibility_label": "बिलिंग पता सहेजें",
+        "save_new_shipping_address_accessibility_label": "शिपिंग पता सहेजें",
+        "shipping_address_card_title": "शिपिंग पता"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "सभी को छिपाएं",
+          "show_all": "सब दिखाएं",
+          "hide_all_accessibility_label": "समीक्षा में सभी ऑर्डर छुपाएं"
+        }
+      }
     }
   },
   "sections": {
