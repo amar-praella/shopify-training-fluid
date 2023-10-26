@@ -90,9 +90,32 @@
         "enable_dynamic_checkout": true,
         "product_tabs_placement": "below_slider"
       }
+    },
+    "5f4e47c4-8625-4859-9024-4454da33bc27": {
+      "type": "global-featured-collection",
+      "settings": {
+        "fluid_layout": false,
+        "collection_grid_type": "collage",
+        "heading_txt": "Featured Collection",
+        "lead_txt": "",
+        "home_featured_collection": "",
+        "section_bg_color": "#FAFAF7",
+        "section_txt_color": "#222222"
+      }
+    },
+    "bd427ab6-1cfc-45f7-9e52-4e882e31581d": {
+      "type": "global-auto-slider",
+      "settings": {
+        "fluid_layout": false,
+        "section_bg_color": "#FAFAF7",
+        "section_txt_color": "#222222",
+        "scroll_time": "50s"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "5f4e47c4-8625-4859-9024-4454da33bc27",
+    "bd427ab6-1cfc-45f7-9e52-4e882e31581d"
   ]
 }
